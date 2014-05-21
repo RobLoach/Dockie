@@ -1,4 +1,4 @@
-# Docker: Forge
+# Forge: Base
 
 Base for a modern development environment, using [Docker](http://docker.io).
 
