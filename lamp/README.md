@@ -5,6 +5,7 @@ Easily set up and develop on a LAMP stack, using [Docker Forge](http://github.co
 
 ## Features
 
+* [Forge](../forge)
 * [Apache](https://httpd.apache.org/) 2.4.7
 * [PHP](http://php.net/) 5.5.9
 * [MySQL](http://www.mysql.com/) 5.5.37
