@@ -6,7 +6,7 @@ A collection of modern development environments, built with [Docker](http://dock
 Repository                          | Description
 ------------------------------------|------------
 [`robloach/forge`](forge)           | The base environment, bringing in the minimum requirements.
-[`robloach/forge-lamp`](forge-lamp) | Create a full Linux, Apache, MySQL and PHP stack.
+[`robloach/forge-lamp`](lamp)       | Create a full Linux, Apache, MySQL and PHP stack.
 
 
 ## Installation

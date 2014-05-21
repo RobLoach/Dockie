@@ -24,7 +24,7 @@ docker pull robloach/forge-lamp
 Or build `robloach/forge-lamp` from source:
 ```
 git clone https://github.com/RobLoach/forge.git
-docker build -t robloach/forge-lamp forge/forge-lamp
+docker build -t robloach/forge-lamp forge/lamp
 ```
 
 ### Run
