@@ -3,7 +3,22 @@
 A collection of modern development environments, built with [Docker](http://docker.io).
 
 
-Dockerfile      | Description
-:--------------:|------------
-[Forge](forge)  | The base environment, bringing in the minimum requirements.
-[LAMP](lamp)    | *Coming Soon*
+Repository                          | Description
+------------------------------------|------------
+[`robloach/forge`](forge)           | The base environment, bringing in the minimum requirements.
+[`robloach/forge-lamp`](forge-lamp) | Create a full Linux, Apache, MySQL and PHP stack.
+
+
+## Installation
+
+Pull the repository you would like to use:
+
+```
+docker pull robloach/forge-lamp
+```
+
+
+## Usage
+
+See the documentation about the specific repository to see how to gain access to
+its services.
