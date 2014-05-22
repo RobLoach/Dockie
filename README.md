@@ -22,4 +22,4 @@ docker pull robloach/forge-node
 ## Usage
 
 See the documentation about the specific repository to see how to gain access to
-its services.
+its exposed services.

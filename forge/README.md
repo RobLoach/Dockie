@@ -30,13 +30,6 @@ docker run -d -p 422:22 -v robloach/forge
 
 ## Services
 
-### SSH
-
-* Host: `localhost`
-* User: `root`
-* Password: `root`
-* Port: `422`
-
-```
-ssh root@localhost -p 422
-```
+Service     | Usage
+------------|------------
+SSH         | Connect with `ssh root@localhost -p 422` with the password `root`

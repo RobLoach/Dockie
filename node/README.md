@@ -42,9 +42,12 @@ docker run -d -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/app:rw robloach/forge
 
 ## Services
 
-See [Forge](../forge#services) for the base services. So far there are no node
-services registered, but if you have some ideas on what could be added, make an
-issue and it'll be added. Some ideas:
+Service     | Usage
+------------|------------
+SSH         | Connect with `ssh root@localhost -p 422` with the password `root`
+
+So far there are no node services registered, but if you have some ideas on
+what could be added, make an issue and it'll be added. Some ideas:
 
 * [Logio](http://logio.org/)
 * [tty.js](https://github.com/chjj/tty.js/)

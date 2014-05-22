@@ -2,7 +2,6 @@
 FROM robloach/forge
 MAINTAINER Rob Loach <robloach@gmail.com>
 
-
 #
 # Apache
 #
@@ -14,7 +13,6 @@ ADD configs/apache2/supervisor.conf /etc/supervisor/conf.d/apache2.conf
 # Enable mod_rewrite
 RUN a2enmod rewrite
 
-
 #
 # PHP
 #
@@ -24,7 +22,6 @@ ADD configs/php/php.ini /etc/php5/apache2/conf.d/30-docker.ini
 RUN php5enmod mcrypt
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin --version=1.0.0-alpha8
-
 
 #
 # MySQL
@@ -36,8 +33,9 @@ ADD configs/mysql/my.cnf /etc/mysql/conf.d/my.cnf
 ADD configs/mysql/supervisor.conf /etc/supervisor/conf.d/mysql.conf
 RUN /mysql-setup.sh
 
-
+#
 # PHPMyAdmin
+#
 RUN (echo 'phpmyadmin phpmyadmin/dbconfig-install boolean true' | debconf-set-selections)
 RUN (echo 'phpmyadmin phpmyadmin/app-password password root' | debconf-set-selections)
 RUN (echo 'phpmyadmin phpmyadmin/app-password-confirm password root' | debconf-set-selections)
@@ -51,8 +49,9 @@ ADD configs/phpmyadmin/phpmyadmin-setup.sh /phpmyadmin-setup.sh
 RUN chmod +x /phpmyadmin-setup.sh
 RUN /phpmyadmin-setup.sh
 
-
+#
 # Start
+#
 VOLUME ["/var/www/html"]
 EXPOSE 22 80 3306
 CMD ["supervisord", "-n"]

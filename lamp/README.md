@@ -40,18 +40,10 @@ docker run -d -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/var/www/html:rw roblo
 
 ## Services
 
-### Apache
-
-Visit `http://localhost:880` in your browser.
-
-### PHP
-
-Visit `http://localhost:880/phpinfo.php` in your browser.
-
-### phpMyAdmin
-
-Visit `http://localhost:880/phpmyadmin` in your browser.
-
-### MySQL
-
-Connect on localhost:3306, user `root`, password `root`.
+Service     | Usage
+------------|------------
+SSH         | Connect with `ssh root@localhost -p 422` with the password `root`
+Apache      | Visit `http://localhost:880` in your browser
+PHP         | Create a full Linux, Apache, MySQL and PHP stack
+phpMyAdmin  | Develop using [Node.js](http://nodejs.org)
+MySQL       | Connect on localhost:3306, user `root`, password `root`
