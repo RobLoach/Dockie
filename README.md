@@ -5,8 +5,9 @@ A collection of modern development environments, built with [Docker](http://dock
 
 Repository                          | Description
 ------------------------------------|------------
-[`robloach/forge`](forge)           | The base environment, bringing in the minimum requirements.
-[`robloach/forge-lamp`](lamp)       | Create a full Linux, Apache, MySQL and PHP stack.
+[`robloach/forge`](forge)           | The base environment, bringing in the minimum requirements
+[`robloach/forge-lamp`](lamp)       | Create a full Linux, Apache, MySQL and PHP stack
+[`robloach/forge-node`](node)       | Develop using [Node.js](http://nodejs.org)
 
 
 ## Installation
@@ -14,7 +15,7 @@ Repository                          | Description
 Pull the repository you would like to use:
 
 ```
-docker pull robloach/forge-lamp
+docker pull robloach/forge-node
 ```
 
 
