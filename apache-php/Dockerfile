@@ -18,7 +18,7 @@ RUN a2enmod rewrite
 #
 # PHP
 #
-RUN apt-get install -y libapache2-mod-php5 php5 php5-json php5-cli php5-curl curl php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql
+RUN apt-get install -y libapache2-mod-php5 php5 php5-json php5-cli php5-curl curl php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql mysql-client
 ADD configs/php/php.ini /etc/php5/apache2/conf.d/30-docker.ini
 # PHP Modules
 RUN php5enmod mcrypt
