@@ -42,3 +42,10 @@ Service     | Usage
 ------------|------------
 SSH         | Connect with `ssh root@localhost -p 422` with the password `root`
 Apache      | Visit `http://localhost:880` in your browser
+
+
+## Volumes
+
+Volume          | Description
+----------------|-------------
+`/var/www/html` | The location of the web root.

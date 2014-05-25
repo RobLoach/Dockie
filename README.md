@@ -9,6 +9,7 @@ Repository                                | Description
 [`robloach/forge-apache-php`](apache-php) | Apache, with the PHP essentials
 [`robloach/forge-lamp`](lamp)             | Create a full Linux, Apache, MySQL and PHP stack
 [`robloach/forge-node`](node)             | Develop using [Node.js](http://nodejs.org)
+[`robloach/forge-mysql`](mysql)           | Run a MySQL server
 
 
 ## Installation
