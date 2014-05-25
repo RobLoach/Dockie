@@ -18,4 +18,3 @@ RUN /mysql-setup.sh
 # Start
 #
 EXPOSE 22 3306
-CMD ["supervisord", "-n"]

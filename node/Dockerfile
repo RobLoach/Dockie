@@ -39,6 +39,3 @@ WORKDIR /app
 
 # Expose any serviced ports
 EXPOSE 22
-
-# Run Supervisor
-CMD ["supervisord", "-n"]

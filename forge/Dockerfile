@@ -27,10 +27,11 @@ ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 #
 RUN apt-get install -y openssh-server
 ADD configs/openssh/supervisor.conf /etc/supervisor/conf.d/openssh.conf
-ADD configs/openssh/openssh-setup.sh /openssh-setup.sh
-RUN chmod +x /openssh-setup.sh
+ADD configs/openssh/ssh-setup.sh /ssh-setup.sh
+RUN chmod +x /ssh-setup.sh
 RUN mkdir -p /var/run/sshd
 RUN chmod 755 /var/run/sshd
+ENV SSH_ROOT_PASSWORD root
 RUN echo "root:root" | chpasswd
 RUN sed -i.bak -e 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 

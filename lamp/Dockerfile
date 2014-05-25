@@ -56,4 +56,3 @@ RUN /phpmyadmin-setup.sh
 #
 VOLUME ["/var/www/html"]
 EXPOSE 22 80 3306
-CMD ["supervisord", "-n"]
