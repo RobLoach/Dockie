@@ -1,4 +1,6 @@
+#
 # Forge: Base
+#
 
 Base for a modern development environment, using [Docker](http://docker.io).
 
@@ -24,7 +26,7 @@ docker build -t robloach/forge forge/forge
 
 Start up the image, binding associated ports:
 ```
-docker run -d -p 422:22 -v robloach/forge
+docker run -p 422:22 robloach/forge
 ```
 
 
@@ -33,3 +35,10 @@ docker run -d -p 422:22 -v robloach/forge
 Service     | Usage
 ------------|------------
 SSH         | Connect with `ssh root@localhost -p 422` with the password `root`
+
+
+## Environment Variables
+
+Variable            | Default | Description
+:-------------------|---------|:--------
+`SSH_ROOT_PASSWORD` | `root`  | The password to use for the `root` SSH user.
