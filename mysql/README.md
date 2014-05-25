@@ -43,9 +43,9 @@ MySQL       | Connect on `localhost:3306`, user `root`, password `root`
 
 ## Environment Variables
 
-Variable            | Description | Default
---------------------|-----------------------
-MYSQL_ROOT_PASSWORD | The password to use for the `root` user. | `root`
-MYSQL_DATABASE      | A database to automatically create if it doesn't exit. | None
-MYSQL_USER          | The MySQL user to create with access to `MYSQL_DATABASE`. | None
-MYSQL_PASSWORD      | The password for `MYSQL_USER` | Empty
+Variable              | Default | Description
+:---------------------|---------|:--------
+`MYSQL_ROOT_PASSWORD` | `root` | The password to use for the `root` user.
+`MYSQL_DATABASE`      | None   | A database to automatically create if it doesn't exit.
+`MYSQL_USER`          | None   | The MySQL user to create with access to `MYSQL_DATABASE`.
+`MYSQL_PASSWORD`      | Empty  | The password for `MYSQL_USER`
