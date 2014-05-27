@@ -41,7 +41,7 @@ RUN sed -i.bak -e 's/PermitRootLogin without-password/PermitRootLogin yes/g' /et
 RUN apt-get install -y zsh
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git /root/.oh-my-zsh
 RUN cp /root/.oh-my-zsh/templates/zshrc.zsh-template /root/.zshrc
-RUN chsh -s /bin/zsh
+RUN chsh --shell $(which zsh)
 
 #
 # Start
