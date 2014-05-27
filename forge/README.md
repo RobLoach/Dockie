@@ -1,6 +1,4 @@
-#
 # Forge: Base
-#
 
 Base for a modern development environment, using [Docker](http://docker.io).
 
@@ -10,6 +8,8 @@ Base for a modern development environment, using [Docker](http://docker.io).
 * [git](http://www.git-scm.com/) 1.9.1
 * [OpenSSH](http://www.openssh.com/) 6.6
 * [Supervisor](http://supervisord.org/) 3.0
+* [Zsh](http://zsh.org) 5.0.2
+* [oh-my-zsh](http://github.com/robbyrussell/oh-my-zsh)
 
 
 ## Usage
