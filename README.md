@@ -10,6 +10,7 @@ Repository                                | Description
 [`robloach/forge-lamp`](lamp)             | Create a full Linux, Apache, MySQL and PHP stack
 [`robloach/forge-node`](node)             | Develop using [Node.js](http://nodejs.org)
 [`robloach/forge-mysql`](mysql)           | Run a MySQL server
+[`robloach/forge-docpad`](docpad)         | Build static sites with [DocPad](http://docpad.org)
 
 
 ## Installation
