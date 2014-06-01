@@ -35,10 +35,10 @@ docker run -d -p 222:22 -p 33306:3306 robloach/forge-mysql
 
 ## Services
 
-Service     | Usage
-------------|------------
-SSH         | Connect with `ssh root@localhost -p 422` with the password `root`
-MySQL       | Connect on `localhost:3306`, user `root`, password `root`
+Service     | Port | Usage
+------------|------|-------
+SSH         | 22   | Connect with `ssh root@localhost -p 422` with the password `root`
+MySQL       | 3306 | Connect on `localhost:3306`, user `root`, password `root`
 
 
 ## Environment Variables

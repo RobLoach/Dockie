@@ -7,8 +7,6 @@ Apache web server, with the PHP essentials, using [Docker Forge](http://github.c
 
 * [Forge](../forge)
 * [Apache](https://httpd.apache.org/) 2.4.7
-* [PHP](http://php.net/) 5.5.9
-* [Composer](http://getcomposer.org) 1.0.0-alpha8
 
 
 ## Usage
@@ -38,10 +36,10 @@ docker run -d -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw robloach/forge-lamp
 
 ## Services
 
-Service     | Usage
-------------|------------
-SSH         | Connect with `ssh root@localhost -p 422` with the password `root`
-Apache      | Visit `http://localhost:880` in your browser
+Service     | Port | Usage
+------------|------|------
+SSH         | 22   | Connect with `ssh root@localhost -p 422` with the password `root`
+Apache      | 80   | Visit `http://localhost:880` in your browser
 
 
 ## Volumes

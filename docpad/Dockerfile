@@ -1,7 +1,7 @@
 #
 # Forge: Node
 #
-FROM robloach/forge-node
+FROM robloach/forge
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 #

@@ -18,12 +18,8 @@ RUN a2enmod rewrite
 #
 # PHP
 #
-RUN apt-get install -y libapache2-mod-php5 php5 php5-json php5-cli php5-curl curl php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql mysql-client
+RUN apt-get install -y libapache2-mod-php5
 ADD configs/php/php.ini /etc/php5/apache2/conf.d/30-docker.ini
-# PHP Modules
-RUN php5enmod mcrypt
-# Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin --version=1.0.0-alpha8
 
 #
 # Start

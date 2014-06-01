@@ -39,10 +39,10 @@ example uses `help`.
 
 ## Services
 
-Service     | Usage
-------------|------------
-SSH         | Connect with `ssh root@localhost -p 422` with the password `root`
-DocPad      | When using `docpad run`, visit `http://localhost:9778` in your browser
+Service     | Port | Usage
+------------|------|------
+SSH         | 22   | Connect with `ssh root@localhost -p 422` with the password `root`
+DocPad      | 9778 | When using `docpad run`, visit `http://localhost:9778` in your browser
 
 
 ## Volumes

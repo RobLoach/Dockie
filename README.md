@@ -6,9 +6,8 @@ A collection of modern development environments, built with [Docker](http://dock
 Repository                                | Description
 ------------------------------------------|------------
 [`robloach/forge`](forge)                 | The base environment, bringing in the minimum requirements
-[`robloach/forge-apache-php`](apache-php) | Apache, with the PHP essentials
+[`robloach/forge-apache`](apache)         | Set up an Apache web server
 [`robloach/forge-lamp`](lamp)             | Create a full Linux, Apache, MySQL and PHP stack
-[`robloach/forge-node`](node)             | Develop using [Node.js](http://nodejs.org)
 [`robloach/forge-mysql`](mysql)           | Run a MySQL server
 [`robloach/forge-docpad`](docpad)         | Build static sites with [DocPad](http://docpad.org)
 

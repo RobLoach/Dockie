@@ -40,9 +40,9 @@ docker run -d -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/var/www/html:rw roblo
 
 ## Services
 
-Service     | Usage
-------------|------------
-SSH         | Connect with `ssh root@localhost -p 422` with the password `root`
-Apache      | Visit `http://localhost:880` in your browser
-phpMyAdmin  | Visit `http://localhost:880/phpmyadmin` in your browser
-MySQL       | Connect on `localhost:3306`, user `root`, password `root`
+Service     | Port | Usage
+------------|------|-------
+SSH         | 22   | Connect with `ssh root@localhost -p 422` with the password `root`
+Apache      | 80   | Visit `http://localhost:880` in your browser
+phpMyAdmin  | 80   | Visit `http://localhost:880/phpmyadmin` in your browser
+MySQL       | 3306 | Connect on `localhost:3306`, user `root`, password `root`
