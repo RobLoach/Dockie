@@ -5,7 +5,7 @@ Development environment for [DocPad](http://docpad.org), using [Docker Forge](ht
 
 ## Features
 
-* [Forge: Node](../node)
+* [Forge](http://github.com/robloach/forge)
 * [DocPad](https://httpd.apache.org/) 6.66.0
 
 
