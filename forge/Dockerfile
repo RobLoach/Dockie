@@ -45,6 +45,8 @@ RUN apt-get install -y php5-cgi php5-json php5-cli php5-curl curl php5-mcrypt ph
 ADD configs/php/php-cli.ini /etc/php5/cli/conf.d/robloach-forge.ini
 RUN php5enmod mcrypt
 RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin --version=1.0.0-alpha8
+ENV COMPOSER_HOME /root/.composer
+RUN composer global require phpunit/phpunit:4.*
 
 
 # Node.js
