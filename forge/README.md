@@ -13,6 +13,7 @@ Base for a modern development environment, using [Docker](http://docker.io).
   * [oh-my-zsh](http://ohmyz.sh)
 * [PHP](http://php.net/) 5.5.9
   * [Composer](http://getcomposer.org) 1.0.0-alpha8
+  * [PHPUnit](http://phpunit.de) 4.1
 * [Python](http://python.org) 2.7.5 and 3.4.0
   * [Pylint](http://pylint.org)
 * [Node](http://nodejs.org) 0.10.28
