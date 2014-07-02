@@ -69,6 +69,11 @@ RUN gem install compass bundler rake
 RUN apt-get install -y python python3 pylint
 
 
+# Go
+
+RUN apt-get install -y golang
+
+
 # Start
 
 EXPOSE 22

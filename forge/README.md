@@ -11,6 +11,7 @@ Base for a modern development environment, using [Docker](http://docker.io).
   * [Supervisor](http://supervisord.org/) 3.0
   * [Zsh](http://zsh.org) 5.0.2
   * [oh-my-zsh](http://ohmyz.sh)
+* [Go](http://golang.org) 1.2.1
 * [PHP](http://php.net/) 5.5.9
   * [Composer](http://getcomposer.org) 1.0.0-alpha8
   * [PHPUnit](http://phpunit.de) 4.1
