@@ -35,7 +35,7 @@ Base for a modern development environment, using [Docker](http://docker.io).
 
 ### Install
 
-Pull robloach/php from the Docker repository:
+Pull robloach/forge from the Docker repository:
 ```
 docker pull robloach/forge
 ```
