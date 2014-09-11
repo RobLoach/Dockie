@@ -11,9 +11,14 @@ RUN apt-get update -y
 RUN apt-get upgrade -y
 
 
+# Version Control
+
+RUN apt-get install -y git
+
+
 # Supervisor
 
-RUN apt-get install -y supervisor git
+RUN apt-get install -y supervisor
 RUN mkdir -p /var/log/supervisor
 ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 
@@ -60,9 +65,10 @@ RUN npm install -g coffee-script bower grunt-cli gulp component yo
 
 # Ruby
 
-RUN apt-get install -y ruby
-RUN gem install compass bundler rake
-
+RUN apt-get install -y ruby ruby-dev rubygems-integration make
+RUN ruby -v
+RUN gem install bundler rake sass
+RUN gem install compass --pre
 
 # Python
 

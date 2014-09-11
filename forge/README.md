@@ -25,10 +25,11 @@ Base for a modern development environment, using [Docker](http://docker.io).
   * [gulp.js](http://gulpjs.com)
   * [component](http://component.io)
   * [Yeoman](http://yeoman.io)
-* [Ruby](http://ruby-lang.org) 1.9.3
-  * [Rake](http://rake.rubyforge.org)
+* [Ruby](http://ruby-lang.org) 2.1.2
   * [Bundler](http://bundler.io)
   * [Compass](http://compass-style.org)
+  * [Rake](https://github.com/jimweirich/rake)
+  * [SASS](http://sass-lang.com)
 
 
 ## Usage
