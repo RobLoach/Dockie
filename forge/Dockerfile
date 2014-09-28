@@ -56,10 +56,9 @@ RUN composer global require phpunit/phpunit:4.*
 
 # Node.js
 
-RUN apt-get install -y -q software-properties-common
-RUN add-apt-repository ppa:chris-lea/node.js -y
-RUN apt-get update -y
-RUN apt-get install nodejs -y
+RUN apt-get install -y build-essential
+RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
+RUN apt-get install -y nodejs
 RUN npm install -g coffee-script bower grunt-cli gulp component yo
 
 
