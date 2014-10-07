@@ -1,8 +1,6 @@
-# Docker: Drupal 8
+# Docker: Drupal
 
-[Docker](http://docker.com) image aimed for [Drupal](http://drupal.org) 8 development, using [Docker Forge](http://github.com/robloach/forge).
-
-http://github.com/robloach/docker-drupal8
+[Docker](http://docker.com) container aimed for [Drupal](http://drupal.org) development, using [Docker Forge](http://github.com/robloach/forge).
 
 
 ## Features
@@ -14,6 +12,7 @@ http://github.com/robloach/docker-drupal8
 * [phpMyAdmin](http://phpmyadmin.net) 4.0.10
 * [Composer](http://getcomposer.org) 1.0.0-alpha8
 * [Drush](http://github.com/drush-ops/drush) master
+* Supports Drupal 6/7/8
 
 
 ## Usage
