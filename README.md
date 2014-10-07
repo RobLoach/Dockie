@@ -10,6 +10,7 @@ Repository                                | Description
 [`robloach/forge-lamp`](lamp)             | Create a full Linux, Apache, MySQL and PHP stack
 [`robloach/forge-mysql`](mysql)           | Run a MySQL server
 [`robloach/forge-docpad`](docpad)         | Build static sites with [DocPad](http://docpad.org)
+[`robloach/forge-drupal`](drupal)         | Rapidly develop [Drupal](http://docpad.org) websites
 
 
 ## Installation
@@ -17,7 +18,7 @@ Repository                                | Description
 Pull the repository you would like to use:
 
 ```
-docker pull robloach/forge-node
+docker pull robloach/forge
 ```
 
 
