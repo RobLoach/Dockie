@@ -11,6 +11,7 @@ Repository                                | Description
 [`robloach/forge-mysql`](mysql)           | Run a MySQL server
 [`robloach/forge-docpad`](docpad)         | Build static sites with [DocPad](http://docpad.org)
 [`robloach/forge-drupal`](drupal)         | Rapidly develop [Drupal](http://docpad.org) websites
+[`robloach/forge-drupal7`](drupal7)       | Rapidly develop [Drupal](http://docpad.org) 7 sites
 
 
 ## Installation
