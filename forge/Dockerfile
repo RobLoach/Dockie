@@ -11,16 +11,16 @@ RUN apt-get update -y
 RUN apt-get upgrade -y
 
 
-# Version Control
-
-RUN apt-get install -y git
-
-
 # Supervisor
 
 RUN apt-get install -y supervisor
 RUN mkdir -p /var/log/supervisor
 ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
+
+
+# Version Control
+
+RUN apt-get install -y git
 
 
 # OpenSSH
@@ -59,7 +59,7 @@ RUN composer global require phpunit/phpunit:4.*
 RUN apt-get install -y build-essential
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
 RUN apt-get install -y nodejs
-RUN npm install -g coffee-script bower grunt-cli gulp component yo
+RUN npm install -g coffee-script bower grunt-cli gulp component yo eslint
 
 
 # Ruby
@@ -68,6 +68,7 @@ RUN apt-get install -y ruby ruby-dev rubygems-integration make
 RUN ruby -v
 RUN gem install bundler rake sass
 RUN gem install compass --pre
+
 
 # Python
 

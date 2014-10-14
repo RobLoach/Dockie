@@ -1,0 +1,38 @@
+name: My Profile Eight
+type: profile
+description: 'A sample Drupal 8 install profile as an example for Forge Drupal Make.'
+core: 8.x
+dependencies:
+  - devel
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - entity_reference
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - views
+  - views_ui
+themes:
+  - bartik
+  - seven

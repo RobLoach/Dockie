@@ -5,14 +5,10 @@
 
 ## Features
 
-* [Docker Forge](http://github.com/robloach/forge)
+* [Forge LAMP](../lamp)
 * [Drupal](http://drupal.org) 6, 7 or 8 support
-* [Apache](http://apache.org) 2.4.7
-* [PHP](http://php.net) 5.5.9
-* [MySQL](http://mysql.com) 5.5.37
-* [phpMyAdmin](http://phpmyadmin.net) 4.0.10
-* [Composer](http://getcomposer.org) 1.0.0-alpha8
 * [Drush](http://github.com/drush-ops/drush) master
+* Sets up a MySQL database named `drupal`
 
 
 ## Usage

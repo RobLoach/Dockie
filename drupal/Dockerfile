@@ -12,6 +12,7 @@ RUN ln -sf ~/.composer/vendor/bin/drush /usr/bin/drush
 
 # Drupal
 
+RUN apt-get install -y sendmail
 ADD configs/drupal/supervisor.conf /etc/supervisor/conf.d/drupal.conf
 ADD configs/drupal/drupal-setup.sh /drupal-setup.sh
 RUN chmod +x /drupal-setup.sh

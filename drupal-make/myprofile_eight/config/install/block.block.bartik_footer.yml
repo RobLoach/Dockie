@@ -1,0 +1,25 @@
+id: bartik_footer
+theme: bartik
+weight: 0
+status: true
+langcode: en
+region: footer
+plugin: 'system_menu_block:footer'
+settings:
+  visibility: {  }
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: visible
+  cache:
+    max_age: -1
+    contexts: {  }
+  level: 1
+  depth: 0
+dependencies:
+  entity:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - bartik

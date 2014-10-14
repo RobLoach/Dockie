@@ -21,6 +21,7 @@ Base for a modern development environment, using [Docker](http://docker.io).
   * [npm](http://npmjs.org)
   * [Bower](http://bower.io)
   * [CoffeeScript](http://coffeescript.org)
+  * [ESLint](http://eslint.org)
   * [Grunt](http://gruntjs.com)
   * [gulp.js](http://gulpjs.com)
   * [component](http://component.io)
