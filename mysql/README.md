@@ -14,23 +14,21 @@ A MySQL server, using [Docker Forge](http://github.com/robloach/forge).
 ### Install
 
 Pull `robloach/forge-mysql` from the Docker repository:
-```
-docker pull robloach/forge-mysql
-```
+
+    docker pull robloach/forge-mysql
+
 
 Or build `robloach/forge-mysql` from source:
-```
-git clone https://github.com/RobLoach/forge.git
-docker build -t robloach/forge-mysql forge/mysql
-```
+
+    git clone https://github.com/RobLoach/forge.git
+    docker build -t robloach/forge-mysql forge/mysql
+
 
 ### Run
 
 Run the image, binding associated ports:
 
-```
-docker run -d -p 222:22 -p 33306:3306 robloach/forge-mysql
-```
+    docker run -d -p 222:22 -p 33306:3306 robloach/forge-mysql
 
 
 ## Services

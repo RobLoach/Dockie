@@ -14,24 +14,21 @@ Apache web server, with the PHP essentials, using [Docker Forge](http://github.c
 ### Install
 
 Pull `robloach/apache-php` from the Docker repository:
-```
-docker pull robloach/forge-apache-php
-```
+
+    docker pull robloach/forge-apache-php
 
 Or build `robloach/forge-apache-php` from source:
-```
-git clone https://github.com/RobLoach/forge.git
-docker build -t robloach/forge-apache-php forge/apache-php
-```
+
+    git clone https://github.com/RobLoach/forge.git
+    docker build -t robloach/forge-apache-php forge/apache-php
+
 
 ### Run
 
 Run the image, binding associated ports, and mounting the present working
 directory:
 
-```
-docker run -d -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw robloach/forge-lamp
-```
+    docker run -d -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw robloach/forge-lamp
 
 
 ## Services
