@@ -19,3 +19,6 @@ cd /var/www/html
   --db-url=mysql://root:root@localhost:3306/drupal \
   --account-name="admin" \
   --account-pass="admin"
+
+# Ensure the files directory can be written to
+chmod 777 -R sites/default/files
