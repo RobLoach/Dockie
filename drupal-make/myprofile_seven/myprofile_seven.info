@@ -1,5 +1,5 @@
 name = My Profile Seven
-description = A sample Drupal 7 install profile as an example for Forge Drupal Make.
+description = A sample Drupal 7 install profile as an example for Drupal Make Dockerfile.
 version = VERSION
 core = 7.x
 hidden = TRUE

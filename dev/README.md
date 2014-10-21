@@ -1,6 +1,6 @@
-# Forge: Base
+# Docker Development Environment
 
-Base for a modern development environment, using [Docker](http://docker.io).
+Modern development environment, using [Docker](http://docker.io).
 
 
 ## Features
@@ -37,22 +37,23 @@ Base for a modern development environment, using [Docker](http://docker.io).
 
 ### Install
 
-Pull robloach/forge from the Docker repository:
+Pull robloach/dev from the Docker repository:
 ```
-docker pull robloach/forge
+docker pull robloach/dev
 ```
 
-Or build `robloach/forge` from source:
+Or build `robloach/dev` from source:
 ```
-git clone https://github.com/RobLoach/forge.git
-docker build -t robloach/forge forge/forge
+git clone https://github.com/RobLoach/Dockerfiles.git
+cd Dockerfiles
+docker build -t robloach/dev dev
 ```
 
 ### Run
 
 Start up the image, binding associated ports:
 ```
-docker run -p 422:22 robloach/forge
+docker run -p 422:22 robloach/dev
 ```
 
 

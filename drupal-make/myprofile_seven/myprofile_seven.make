@@ -1,5 +1,5 @@
 ; My Profile for Drupal 7
-; A sample Drupal 7 install profile for use with Forge Drupal Make.
+; A sample Drupal 7 install profile for use with Drupal Make Dockerfile.
 
 ; Drush Make API
 api = 2

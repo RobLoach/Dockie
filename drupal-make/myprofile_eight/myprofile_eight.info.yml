@@ -1,6 +1,6 @@
 name: My Profile Eight
 type: profile
-description: 'A sample Drupal 8 install profile as an example for Forge Drupal Make.'
+description: 'A sample Drupal 8 install profile as an example for Drupal Make Dockerfile.'
 core: 8.x
 dependencies:
   - devel

@@ -1,6 +1,6 @@
-# Forge: Drupal Make
+# Drupal Make Dockerfile
 
-FROM robloach/forge-drupal
+FROM robloach/drupal
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 

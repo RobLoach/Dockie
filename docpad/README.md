@@ -1,34 +1,35 @@
-# Forge: DocPad
+# DocPad Dockerfile
 
-Development environment for [DocPad](http://docpad.org), using [Docker Forge](http://github.com/robloach/forge).
+Development environment for [DocPad](http://docpad.org), using the [Docker Development Environment](http://github.com/robloach/dockerfiles).
 
 
 ## Features
 
-* [Forge](http://github.com/robloach/forge)
-* [DocPad](https://httpd.apache.org/) 6.66.0
+* [Development Environment](../dev)
+* [DocPad](https://docpad.org) 6.66.0
 
 
 ## Usage
 
 ### Install
 
-Pull `robloach/forge-docpad` from the Docker repository:
+Pull `robloach/docpad` from the Docker repository:
 
-    docker pull robloach/forge-docpad
+    docker pull robloach/docpad
 
 
-Or build `robloach/forge-docpad` from source:
+Or build `robloach/docpad` from source:
 
-    git clone https://github.com/RobLoach/forge.git
-    docker build -t robloach/forge-docpad forge/node
+    git clone https://github.com/RobLoach/Dockerfiles.git
+    cd Dockerfiles
+    docker build -t robloach/docpad docpad
 
 ### Run
 
 Run the image, binding associated ports, and mounting the present working
 directory:
 
-    docker run -p 9778:9778 -p 222:22 -v $(pwd):/app:rw robloach/forge-docpad help
+    docker run -p 9778:9778 -p 222:22 -v $(pwd):/app:rw robloach/docpad help
 
 Append the DocPad command to the end of your `docker run` command. The above
 example uses `help`.
