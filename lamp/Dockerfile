@@ -1,6 +1,6 @@
-# Forge: LAMP
+# LAMP Docker
 
-FROM robloach/forge
+FROM robloach/dev
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 

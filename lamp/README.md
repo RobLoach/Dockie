@@ -1,11 +1,11 @@
-# Forge: LAMP
+# LAMP Dockerfile
 
-Easily set up and develop on a LAMP stack, using [Docker Forge](http://github.com/robloach/forge).
+Easily set up and develop on a LAMP stack, using [Development Environment](http://github.com/robloach/dockerfiles).
 
 
 ## Features
 
-* [Forge](../forge)
+* [Dev](../dev)
 * [Apache](https://httpd.apache.org/) 2.4.7
 * [PHP](http://php.net/) 5.5.9
 * [MySQL](http://www.mysql.com/) 5.5.37
@@ -17,15 +17,16 @@ Easily set up and develop on a LAMP stack, using [Docker Forge](http://github.co
 
 ### Install
 
-Pull `robloach/forge-lamp` from the Docker repository:
+Pull `robloach/lamp` from the Docker repository:
 ```
-docker pull robloach/forge-lamp
+docker pull robloach/lamp
 ```
 
-Or build `robloach/forge-lamp` from source:
+Or build `robloach/lamp` from source:
 ```
-git clone https://github.com/RobLoach/forge.git
-docker build -t robloach/forge-lamp forge/lamp
+git clone https://github.com/RobLoach/Dockerfiles.git
+cd Dockerfiles
+docker build -t robloach/lamp lamp
 ```
 
 ### Run
@@ -34,7 +35,7 @@ Run the image, binding associated ports, and mounting the present working
 directory:
 
 ```
-docker run -d -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/var/www/html:rw robloach/forge-lamp
+docker run -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/var/www/html:rw robloach/lamp
 ```
 
 

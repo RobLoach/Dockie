@@ -1,6 +1,6 @@
-# Forge: DocPad
+# Node
 
-FROM robloach/forge
+FROM robloach/dev
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 

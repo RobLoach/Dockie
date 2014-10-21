@@ -1,6 +1,6 @@
-# Forge: Drupal
+# Drupal Dockerfile
 
-FROM robloach/forge-lamp
+FROM robloach/lamp
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 

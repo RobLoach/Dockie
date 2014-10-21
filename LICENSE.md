@@ -1,6 +1,6 @@
 # LICENSE
 
-Forge is released under the MIT License:
+Dockerfiles are released under the MIT License:
 
 > Copyright (C) 2014+ [Rob Loach](http://robloach.net)
 >

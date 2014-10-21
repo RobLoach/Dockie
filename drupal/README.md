@@ -1,11 +1,11 @@
-# Docker: Drupal
+# Drupal Dockerfile
 
-[Docker](http://docker.com) container aimed for [Drupal](http://drupal.org) development, using [Docker Forge](http://github.com/robloach/forge).
+[Docker](http://docker.com) container aimed for [Drupal](http://drupal.org) development, using the [Docker Development Environment](http://github.com/robloach/Dockerfiles).
 
 
 ## Features
 
-* [Forge LAMP](../lamp)
+* [LAMP](../lamp)
 * [Drupal](http://drupal.org) 6, 7 or 8 support
 * [Drush](http://github.com/drush-ops/drush) master
 * Sets up a MySQL database named `drupal`
@@ -15,15 +15,15 @@
 
 ### Install
 
-Pull `forge/drupal` from the Docker repository:
+Pull `robloach/drupal` from the Docker repository:
 
-    docker pull robloach/forge-drupal
+    docker pull robloach/drupal
 
-Or build `robloach/forge-drupal` from source:
+Or build `robloach/drupal` from source:
 
-    git clone https://github.com/RobLoach/forge.git
-    cd forge/drupal
-    docker build -t robloach/forge-drupal .
+    git clone https://github.com/RobLoach/Dockerfiles.git
+    cd Dockerfiles
+    docker build -t robloach/drupal drupal
 
 
 ### Usage
@@ -39,7 +39,7 @@ Or build `robloach/forge-drupal` from source:
 directory:
 
   ``` bash
-  docker run -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw robloach/forge-drupal
+  docker run -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw robloach/drupal
   ```
 
 3. Visit `http://localhost:880` in your browser
