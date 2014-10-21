@@ -17,16 +17,16 @@ Easily set up and develop on a LAMP stack, using [Development Environment](http:
 
 ### Install
 
-Pull `robloach/lamp` from the Docker repository:
+Pull `robloach/dockerfiles:lamp` from the Docker repository:
 ```
-docker pull robloach/lamp
+docker pull robloach/dockerfiles:lamp
 ```
 
-Or build `robloach/lamp` from source:
+Or build `robloach/dockerfiles:lamp` from source:
 ```
 git clone https://github.com/RobLoach/Dockerfiles.git
 cd Dockerfiles
-docker build -t robloach/lamp lamp
+docker build -t robloach/dockerfiles:lamp lamp
 ```
 
 ### Run
@@ -35,7 +35,7 @@ Run the image, binding associated ports, and mounting the present working
 directory:
 
 ```
-docker run -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/var/www/html:rw robloach/lamp
+docker run -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/var/www/html:rw robloach/dockerfiles:lamp
 ```
 
 

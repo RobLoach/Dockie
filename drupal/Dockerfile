@@ -1,6 +1,6 @@
 # Drupal Dockerfile
 
-FROM robloach/lamp
+FROM robloach/dockerfiles:lamp
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 

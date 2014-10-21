@@ -37,23 +37,23 @@ Modern development environment, using [Docker](http://docker.io).
 
 ### Install
 
-Pull robloach/dev from the Docker repository:
+Pull robloach/dockerfiles:dev from the Docker repository:
 ```
-docker pull robloach/dev
+docker pull robloach/dockerfiles:dev
 ```
 
-Or build `robloach/dev` from source:
+Or build `robloach/dockerfiles:dev` from source:
 ```
 git clone https://github.com/RobLoach/Dockerfiles.git
 cd Dockerfiles
-docker build -t robloach/dev dev
+docker build -t robloach/dockerfiles:dev dev
 ```
 
 ### Run
 
 Start up the image, binding associated ports:
 ```
-docker run -p 422:22 robloach/dev
+docker run -p 422:22 robloach/dockerfiles:dev
 ```
 
 

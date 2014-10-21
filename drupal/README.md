@@ -15,15 +15,15 @@
 
 ### Install
 
-Pull `robloach/drupal` from the Docker repository:
+Pull `robloach/dockerfiles:drupal` from the Docker repository:
 
-    docker pull robloach/drupal
+    docker pull robloach/dockerfiles:drupal
 
-Or build `robloach/drupal` from source:
+Or build `robloach/dockerfiles:drupal` from source:
 
     git clone https://github.com/RobLoach/Dockerfiles.git
     cd Dockerfiles
-    docker build -t robloach/drupal drupal
+    docker build -t robloach/dockerfiles:drupal drupal
 
 
 ### Usage
@@ -39,7 +39,7 @@ Or build `robloach/drupal` from source:
 directory:
 
   ``` bash
-  docker run -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw robloach/drupal
+  docker run -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw robloach/dockerfiles:drupal
   ```
 
 3. Visit `http://localhost:880` in your browser

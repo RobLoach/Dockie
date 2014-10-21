@@ -4,20 +4,19 @@ Collection of [Dockerfiles](http://docs.docker.com/reference/builder/), built fo
 
 ## Index
 
-Repository                           | Description
--------------------------------------|------------
-[`robloach/dev`](dev)                | Modern development environment
-[`robloach/lamp`](lamp)              | Create a full Linux, Apache, MySQL and PHP stack
-[`robloach/docpad`](docpad)          | Build static sites with [DocPad](http://docpad.org)
-[`robloach/drupal`](drupal)          | Rapidly develop [Drupal](http://docpad.org) websites
-[`robloach/drupal-make`](drupal-make)| Spin up [Drupal](http://docpad.org) sites with [Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.txt)
+Repository                                       | Description
+-------------------------------------------------|------------
+[`robloach/dockerfiles:dev`](dev)                | Modern development environment
+[`robloach/dockerfiles:lamp`](lamp)              | Create a full Linux, Apache, MySQL and PHP stack
+[`robloach/dockerfiles:drupal`](drupal)          | Rapidly develop [Drupal](http://docpad.org) websites
+[`robloach/dockerfiles:drupal-make`](drupal-make)| Spin up [Drupal](http://docpad.org) sites with [Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.txt)
 
 
 ## Installation
 
 Pull the repository you would like to use:
 
-    docker pull robloach/dev
+    docker pull robloach/dockerfiles:dev
 
 
 ## Usage

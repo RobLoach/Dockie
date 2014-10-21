@@ -1,6 +1,6 @@
 # Drupal Make Dockerfile
 
-FROM robloach/drupal
+FROM robloach/dev:drupal
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 

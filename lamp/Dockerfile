@@ -1,6 +1,6 @@
 # LAMP Docker
 
-FROM robloach/dev
+FROM robloach/dockerfiles:dev
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 
