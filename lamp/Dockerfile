@@ -1,6 +1,6 @@
 # LAMP Docker
 
-FROM dockie/lamp
+FROM dockie/dockie
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 
