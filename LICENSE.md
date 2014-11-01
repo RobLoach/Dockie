@@ -1,6 +1,6 @@
 # LICENSE
 
-Dockerfiles are released under the MIT License:
+Dockie are released under the MIT License:
 
 > Copyright (C) 2014+ [Rob Loach](http://robloach.net)
 >

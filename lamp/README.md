@@ -1,11 +1,11 @@
-# LAMP Dockerfile
+# Dockie: LAMP
 
-Easily set up and develop on a LAMP stack, using [Development Environment](http://github.com/robloach/dockerfiles).
+Easily set up and develop on a LAMP stack, using [Dockie Development Environment](http://github.com/robloach/dockie).
 
 
 ## Features
 
-* [Dev](../dev)
+* [Dockie](../dockie)
 * [Apache](https://httpd.apache.org/) 2.4.7
 * [PHP](http://php.net/) 5.5.9
 * [MySQL](http://www.mysql.com/) 5.5.37
@@ -17,16 +17,16 @@ Easily set up and develop on a LAMP stack, using [Development Environment](http:
 
 ### Install
 
-Pull `robloach/dockerfiles:lamp` from the Docker repository:
+Pull `dockie/lamp` from the Docker repository:
 ```
-docker pull robloach/dockerfiles:lamp
+docker pull dockie/lamp
 ```
 
-Or build `robloach/dockerfiles:lamp` from source:
+Or build `dockie/lamp` from source:
 ```
-git clone https://github.com/RobLoach/Dockerfiles.git
-cd Dockerfiles
-docker build -t robloach/dockerfiles:lamp lamp
+git clone https://github.com/RobLoach/Dockie.git
+cd Dockie
+docker build -t dockie/lamp lamp
 ```
 
 ### Run
@@ -35,7 +35,7 @@ Run the image, binding associated ports, and mounting the present working
 directory:
 
 ```
-docker run -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/var/www/html:rw robloach/dockerfiles:lamp
+docker run -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/var/www/html:rw dockie/lamp
 ```
 
 

@@ -1,4 +1,4 @@
-# Development Environment
+# Dockie Development Environment
 
 FROM ubuntu:trusty
 MAINTAINER Rob Loach <robloach@gmail.com>

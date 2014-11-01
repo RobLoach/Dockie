@@ -1,6 +1,6 @@
-# Drupal Make Dockerfile
+# Dockie: Drupal Make
 
-FROM robloach/dockerfiles:drupal
+FROM dockie/drupal-make
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 

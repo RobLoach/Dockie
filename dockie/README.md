@@ -1,4 +1,4 @@
-# Docker Development Environment
+# Dockie Development Environment
 
 Modern development environment, using [Docker](http://docker.io).
 
@@ -37,23 +37,23 @@ Modern development environment, using [Docker](http://docker.io).
 
 ### Install
 
-Pull robloach/dockerfiles:dev from the Docker repository:
+Pull `dockie/dockie` from the Docker repository:
 ```
-docker pull robloach/dockerfiles:dev
+docker pull dockie/dockie
 ```
 
-Or build `robloach/dockerfiles:dev` from source:
+Or build `dockie/dockie` from source:
 ```
-git clone https://github.com/RobLoach/Dockerfiles.git
-cd Dockerfiles
-docker build -t robloach/dockerfiles:dev dev
+git clone https://github.com/RobLoach/Dockie.git
+cd Dockie
+docker build -t dockie/dockie dockie
 ```
 
 ### Run
 
 Start up the image, binding associated ports:
 ```
-docker run -p 422:22 robloach/dockerfiles:dev
+docker run -p 422:22 dockie/dockie
 ```
 
 

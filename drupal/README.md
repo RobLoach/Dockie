@@ -1,6 +1,6 @@
-# Drupal Dockerfile
+# Dockie: Drupal
 
-[Docker](http://docker.com) container aimed for [Drupal](http://drupal.org) development, using the [Docker Development Environment](http://github.com/robloach/Dockerfiles).
+[Docker](http://docker.com) container aimed for [Drupal](http://drupal.org) development, using the [Dockie Development Environment](http://github.com/robloach/dockie).
 
 
 ## Features
@@ -15,15 +15,15 @@
 
 ### Install
 
-Pull `robloach/dockerfiles:drupal` from the Docker repository:
+Pull `dockie/drupal` from the Docker repository:
 
-    docker pull robloach/dockerfiles:drupal
+    docker pull dockie/drupal
 
-Or build `robloach/dockerfiles:drupal` from source:
+Or build `dockie/drupal` from source:
 
-    git clone https://github.com/RobLoach/Dockerfiles.git
-    cd Dockerfiles
-    docker build -t robloach/dockerfiles:drupal drupal
+    git clone https://github.com/RobLoach/Dockie.git
+    cd Dockie
+    docker build -t dockie/drupal drupal
 
 
 ### Usage
@@ -39,7 +39,7 @@ Or build `robloach/dockerfiles:drupal` from source:
 directory:
 
   ``` bash
-  docker run -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw robloach/dockerfiles:drupal
+  docker run -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw dockie/drupal
   ```
 
 3. Visit `http://localhost:880` in your browser
