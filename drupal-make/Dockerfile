@@ -1,6 +1,6 @@
 # Dockie: Drupal Make
 
-FROM dockie/drupal-make
+FROM dockie/drupal
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 
