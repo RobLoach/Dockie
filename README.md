@@ -1,15 +1,15 @@
 # Dockie
 
-Collection of [Dockerfiles](http://docs.docker.com/reference/builder/), built for use with [Docker](http://docker.io).
+Collection of modern development environments for [Docker](http://docker.io).
 
 ## Index
 
 Repository                                       | Description
 -------------------------------------------------|------------
-[`dockie/dockie`](dockie)          | Modern development environment
-[`dockie/lamp`](lamp)              | Create a full Linux, Apache, MySQL and PHP stack
-[`dockie/drupal`](drupal)          | Rapidly develop [Drupal](http://docpad.org) websites
-[`dockie/drupal-make`](drupal-make)| Spin up [Drupal](http://docpad.org) sites with [Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.txt)
+[`dockie/dockie`](dockie)          | Base modern development environment
+[`dockie/lamp`](lamp)              | Linux, Apache, MySQL and PHP stack
+[`dockie/drupal`](drupal)          | [Drupal](http://docpad.org) stack
+[`dockie/drupal-make`](drupal-make)| [Drupal](http://docpad.org) stack through [Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.txt)
 
 
 ## Installation

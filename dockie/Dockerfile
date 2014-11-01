@@ -49,8 +49,10 @@ RUN chsh --shell $(which zsh)
 RUN apt-get install -y php5-cgi php5-json php5-cli php5-curl curl php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql php5-gd
 ADD configs/php/php-cli.ini /etc/php5/cli/conf.d/robloach-dev.ini
 RUN php5enmod mcrypt
+RUN php --version
 RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin --version=1.0.0-alpha8
 ENV COMPOSER_HOME /root/.composer
+RUN composer --version
 RUN composer global require phpunit/phpunit:4.*
 
 
@@ -59,13 +61,14 @@ RUN composer global require phpunit/phpunit:4.*
 RUN apt-get install -y build-essential
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
 RUN apt-get install -y nodejs
+RUN nodejs --version
 RUN npm install -g coffee-script bower grunt-cli gulp component yo eslint
 
 
 # Ruby
 
 RUN apt-get install -y ruby ruby-dev rubygems-integration make
-RUN ruby -v
+RUN ruby --version
 RUN gem install bundler rake sass
 RUN gem install compass --pre
 
@@ -73,6 +76,8 @@ RUN gem install compass --pre
 # Python
 
 RUN apt-get install -y python python3 pylint
+RUN python --version
+RUN python3 --version
 
 
 # Go

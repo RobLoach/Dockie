@@ -1,20 +1,20 @@
 # Dockie Development Environment
 
-Modern development environment, using [Docker](http://docker.io).
+Modern development environment for [Docker](http://docker.io).
 
 
 ## Features
 
 * Base
-  * [git](http://www.git-scm.com/) 1.9.1
-  * [OpenSSH](http://www.openssh.com/) 6.6
-  * [Supervisor](http://supervisord.org/) 3.0
-  * [Zsh](http://zsh.org) 5.0.2
+  * [git](http://www.git-scm.com/)
+  * [OpenSSH](http://www.openssh.com/)
+  * [Supervisor](http://supervisord.org/)
+  * [Zsh](http://zsh.org)
   * [oh-my-zsh](http://ohmyz.sh)
 * [Go](http://golang.org) 1.2.1
 * [PHP](http://php.net/) 5.5.9
   * [Composer](http://getcomposer.org) 1.0.0-alpha8
-  * [PHPUnit](http://phpunit.de) 4.1
+  * [PHPUnit](http://phpunit.de)
 * [Python](http://python.org) 2.7.5 and 3.4.0
   * [Pylint](http://pylint.org)
 * [Node](http://nodejs.org) 0.10.28
