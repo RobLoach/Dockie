@@ -16,11 +16,13 @@ RUN apt-get upgrade -y
 RUN apt-get install -y supervisor
 RUN mkdir -p /var/log/supervisor
 ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
+RUN supervisord --version
 
 
 # Version Control
 
 RUN apt-get install -y git
+RUN git --version
 
 
 # OpenSSH
@@ -42,6 +44,7 @@ RUN apt-get install -y zsh
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git /root/.oh-my-zsh
 ADD configs/oh-my-zsh/zshrc /root/.zshrc
 RUN chsh --shell $(which zsh)
+RUN zsh --version
 
 
 # PHP
@@ -83,6 +86,8 @@ RUN python3 --version
 # Go
 
 RUN apt-get install -y golang
+RUN golang --version
+RUN go version
 
 
 # Start
