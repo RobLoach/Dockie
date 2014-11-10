@@ -15,6 +15,7 @@ Modern development environment for [Docker](http://docker.io).
 * [PHP](http://php.net/) 5.5.9
   * [Composer](http://getcomposer.org) 1.0.0-alpha8
   * [PHPUnit](http://phpunit.de)
+  * [HHVM](http://hhvm.com) 3.3.1
 * [Python](http://python.org) 2.7.5 and 3.4.0
   * [Pylint](http://pylint.org)
 * [Node](http://nodejs.org) 0.10.28

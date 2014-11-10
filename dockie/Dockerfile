@@ -59,6 +59,16 @@ RUN composer --version
 RUN composer global require phpunit/phpunit:4.*
 
 
+# HHVM
+
+RUN wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | sudo apt-key add - && \
+    echo 'deb http://dl.hhvm.com/ubuntu trusty main' \
+      | tee /etc/apt/sources.list.d/hhvm.list && \
+    apt-get update && \
+    apt-get install --no-install-recommends -y hhvm libmemcached-dev libgmp-dev
+RUN hhvm --version
+
+
 # Node.js
 
 RUN apt-get install -y build-essential
@@ -88,6 +98,12 @@ RUN python3 --version
 RUN apt-get install -y golang
 RUN golang --version
 RUN go version
+
+
+# Clean up
+
+RUN apt-get clean
+RUN apt-get autoremove
 
 
 # Start
