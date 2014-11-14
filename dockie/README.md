@@ -16,9 +16,9 @@ Modern development environment for [Docker](http://docker.io).
   * [Composer](http://getcomposer.org) 1.0.0-alpha8
   * [PHPUnit](http://phpunit.de)
   * [HHVM](http://hhvm.com) 3.3.1
-* [Python](http://python.org) 2.7.5 and 3.4.0
+* [Python](http://python.org) 2.7.6 and 3.4.0
   * [Pylint](http://pylint.org)
-* [Node](http://nodejs.org) 0.10.28
+* [Node](http://nodejs.org) 0.10.33
   * [npm](http://npmjs.org)
   * [Bower](http://bower.io)
   * [CoffeeScript](http://coffeescript.org)
@@ -27,12 +27,12 @@ Modern development environment for [Docker](http://docker.io).
   * [gulp.js](http://gulpjs.com)
   * [component](http://component.io)
   * [Yeoman](http://yeoman.io)
-* [Ruby](http://ruby-lang.org) 2.1.2
+* [Ruby](http://ruby-lang.org) 1.9.3
   * [Bundler](http://bundler.io)
   * [Compass](http://compass-style.org)
   * [Rake](https://github.com/jimweirich/rake)
   * [SASS](http://sass-lang.com)
-* [Rust](http://rust-lang.org) Nightly
+* [Rust](http://rust-lang.org) 0.13.0-nightly
 
 
 ## Usage
