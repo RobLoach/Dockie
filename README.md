@@ -23,3 +23,8 @@ Pull the repository you would like to use:
 
 See the documentation about the specific repository to see how to gain access to
 its exposed services.
+
+
+## License
+
+Licensed under the incredibly permissive [MIT License](LICENSE.md).
