@@ -27,12 +27,14 @@ Modern development environment for [Docker](http://docker.io).
   * [gulp.js](http://gulpjs.com)
   * [component](http://component.io)
   * [Yeoman](http://yeoman.io)
-* [Ruby](http://ruby-lang.org) 1.9.3
+* [Ruby](http://ruby-lang.org) 2.1.4
+  * [Gem](http://rubygems.org) 2.2.2
   * [Bundler](http://bundler.io)
   * [Compass](http://compass-style.org)
   * [Rake](https://github.com/jimweirich/rake)
   * [SASS](http://sass-lang.com)
 * [Rust](http://rust-lang.org) 0.13.0-nightly
+  * [Cargo](http://crates.io)
 
 
 ## Usage

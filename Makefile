@@ -5,14 +5,6 @@ build:
 	docker build -t dockie/drupal-make drupal-make
 
 version:
-	@docker run dockie/dockie \
-	go version && \
-	php --version && \
-	python --version && \
-	python3 --version && \
-	echo "Node " && node --version && \
-	ruby --version && \
-	rustc --version
-
+	@docker run dockie/dockie sh /dockie-version
 
 PHONY: build
