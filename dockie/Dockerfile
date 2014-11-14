@@ -99,6 +99,12 @@ RUN apt-get install -y golang
 RUN go version
 
 
+# Rust
+
+RUN curl -s https://static.rust-lang.org/rustup.sh | sudo sh
+RUN rustc --version
+
+
 # Clean up
 
 RUN apt-get clean

@@ -32,6 +32,7 @@ Modern development environment for [Docker](http://docker.io).
   * [Compass](http://compass-style.org)
   * [Rake](https://github.com/jimweirich/rake)
   * [SASS](http://sass-lang.com)
+* [Rust](http://rust-lang.org) Nightly
 
 
 ## Usage
