@@ -49,9 +49,9 @@ RUN zsh --version
 
 # PHP
 
-RUN apt-get install -y php5-cgi php5-json php5-cli php5-curl curl php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql php5-gd
+RUN apt-get install -y php5-cgi php5-json php5-cli php5-curl curl php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql php5-gd php5-sqlite sqlite
 ADD configs/php/php-cli.ini /etc/php5/cli/conf.d/robloach-dev.ini
-RUN php5enmod mcrypt
+RUN php5enmod mcrypt pdo pdo_sqlite sqlite3
 RUN php --version
 RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin --version=1.0.0-alpha8
 ENV COMPOSER_HOME /root/.composer
