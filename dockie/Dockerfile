@@ -96,7 +96,6 @@ RUN python3 --version
 # Go
 
 RUN apt-get install -y golang
-RUN golang --version
 RUN go version
 
 
