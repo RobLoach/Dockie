@@ -20,7 +20,7 @@ RUN chmod +x /drupal-setup.sh
 
 # Start
 
-WORKDIR "/var/www/html"
+WORKDIR /var/www/html
 VOLUME "/var/www/html"
 EXPOSE 22 80 3306
 CMD ["supervisord", "-n"]
