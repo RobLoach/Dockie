@@ -78,19 +78,26 @@ RUN nodejs --version
 RUN npm install -g coffee-script bower grunt-cli gulp component yo eslint
 
 
-# Ruby
-
-RUN apt-get install -y ruby ruby-dev rubygems-integration make
-RUN ruby --version
-RUN gem install bundler rake sass
-RUN gem install compass --pre
-
-
 # Python
 
 RUN apt-get install -y python python3 pylint
 RUN python --version
 RUN python3 --version
+
+
+# Ruby
+
+RUN apt-get install software-properties-common -y
+RUN apt-add-repository ppa:brightbox/ruby-ng
+RUN apt-get update
+RUN apt-get install ruby ruby-switch -y
+RUN apt-get install ruby2.1 ruby2.1-dev -y
+RUN ruby-switch --set ruby2.1
+RUN ruby2.1 --version && echo "Gem version:" && gem --version
+RUN gem install bundler rake sass
+RUN bundle --version && rake --version && sass --version
+RUN gem install compass
+RUN compass --version
 
 
 # Go
@@ -103,6 +110,14 @@ RUN go version
 
 RUN curl -s https://static.rust-lang.org/rustup.sh | sudo sh
 RUN rustc --version
+RUN cargo --version
+
+
+# Version Check
+
+COPY configs/dockie/dockie-version /dockie-version
+RUN chmod +x /dockie-version
+RUN /dockie-version
 
 
 # Clean up

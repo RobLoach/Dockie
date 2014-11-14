@@ -1,0 +1,15 @@
+#!/bin/bash
+go version
+php --version
+hhvm --version
+python --version
+python3 --version
+echo "Node version:" && node --version
+ruby --version
+echo "Gem version:" && gem --version
+bundle --version
+rake --version
+sass --version
+compass --version
+rustc --version
+cargo --version
