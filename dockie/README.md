@@ -57,7 +57,7 @@ docker build -t dockie/dockie dockie
 
 Start up the image, binding associated ports:
 ```
-docker run -p 422:22 dockie/dockie
+docker run -p 2200:22 dockie/dockie
 ```
 
 

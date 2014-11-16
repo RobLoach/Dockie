@@ -35,7 +35,7 @@ Run the image, binding associated ports, and mounting the present working
 directory:
 
 ```
-docker run -p 880:80 -p 222:22 -p 33306:3306 -v $(pwd):/var/www/html:rw dockie/lamp
+docker run -p 8000:80 -p 2200:22 -p 3306:3306 -v $(pwd):/var/www/html:rw dockie/lamp
 ```
 
 

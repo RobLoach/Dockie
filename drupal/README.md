@@ -39,7 +39,7 @@ Or build `dockie/drupal` from source:
 directory:
 
   ``` bash
-  docker run -p 880:80 -p 222:22 -v $(pwd):/var/www/html:rw dockie/drupal
+  docker run -p 8000:80 -p 2200:22 -v $(pwd):/var/www/html:rw dockie/drupal
   ```
 
 3. Visit `http://localhost:880` in your browser

@@ -35,7 +35,7 @@ Change directory to where an install profile, with a `.make` file, is located:
 Run the image, binding associated ports, and mounting the present working
 directory:
 
-    docker run -p 880:80 -p 222:22 -v $(pwd):/profile:rw dockie/drupal-make
+    docker run -p 8000:80 -p 2200:22 -v $(pwd):/profile:rw dockie/drupal-make
 
 Wait for `drupal-make-setup` to finish running, then visit `http://localhost:880` in your browser to see the installed site.
 

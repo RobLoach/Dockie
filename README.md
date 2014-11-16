@@ -8,8 +8,9 @@ Repository                                       | Description
 -------------------------------------------------|------------
 [`dockie/dockie`](dockie)          | Base modern development environment
 [`dockie/lamp`](lamp)              | Linux, Apache, MySQL and PHP stack
-[`dockie/drupal`](drupal)          | [Drupal](http://docpad.org) stack
-[`dockie/drupal-make`](drupal-make)| [Drupal](http://docpad.org) stack through [Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.txt)
+[`dockie/drupal`](drupal)          | [Drupal](http://drupal.org) stack
+[`dockie/drupal-make`](drupal-make)| [Drupal](http://drupal.org) stack from an install profile with [Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.txt)
+[`dockie/drupal-site-install`](drupal-site-install)| [Drupal](http://docpad.org) stack from the Drupal root
 
 
 ## Installation
