@@ -6,14 +6,17 @@ Modern development environment for [Docker](http://docker.io).
 ## Features
 
 * Base
-  * [git](http://www.git-scm.com/)
-  * [OpenSSH](http://www.openssh.com/)
-  * [Supervisor](http://supervisord.org/)
+  * [git](http://www.git-scm.com)
+  * [Mercurial](http://mercurial.selenic.com)
+  * [Subversion](https://subversion.apache.org)
+  * [OpenSSH](http://www.openssh.com)
+  * [Supervisor](http://supervisord.org)
   * [Zsh](http://zsh.org)
   * [oh-my-zsh](http://ohmyz.sh)
 * [Go](http://golang.org) 1.2.1
-* [PHP](http://php.net/) 5.5.9
+* [PHP](http://php.net) 5.5.9
   * [Composer](http://getcomposer.org) 1.0.0-alpha8
+  * [Drush](http://github.com/drush-ops/drush)
   * [PHPUnit](http://phpunit.de)
   * [HHVM](http://hhvm.com) 3.3.1
 * [Python](http://python.org) 2.7.6 and 3.4.0

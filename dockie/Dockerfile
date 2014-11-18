@@ -21,8 +21,10 @@ RUN supervisord --version
 
 # Version Control
 
-RUN apt-get install -y git
+RUN apt-get install -y git mercurial subversion
 RUN git --version
+RUN hg --version
+RUN svn --version
 
 
 # OpenSSH
@@ -35,7 +37,8 @@ RUN mkdir -p /var/run/sshd
 RUN chmod 755 /var/run/sshd
 ENV SSH_ROOT_PASSWORD root
 RUN echo "root:root" | chpasswd
-RUN sed -i.bak -e 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+RUN sed -i.bak -e 's/PermitRootLogin without-password/PermitRootLogin yes/g' \
+  /etc/ssh/sshd_config
 
 
 # Zsh
@@ -49,23 +52,42 @@ RUN zsh --version
 
 # PHP
 
-RUN apt-get install -y php5-cgi php5-json php5-cli php5-curl curl php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql php5-gd php5-sqlite sqlite
-ADD configs/php/php-cli.ini /etc/php5/cli/conf.d/robloach-dev.ini
+RUN apt-get install -y php-pear php5-cgi php5-json php5-cli php5-curl curl \
+  php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql php5-gd php5-sqlite \
+  sqlite
+ADD configs/php/php-cli.ini /etc/php5/cli/conf.d/dockie-dockie.ini
 RUN php5enmod mcrypt pdo pdo_sqlite sqlite3
 RUN php --version
-RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin --version=1.0.0-alpha8
+
+
+# Composer
+
+RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer \
+  --install-dir=/usr/bin --version=1.0.0-alpha8
 ENV COMPOSER_HOME /root/.composer
+ENV PATH $COMPOSER_HOME/vendor/bin:$PATH
 RUN composer --version
+
+
+# PHPUnit
+
 RUN composer global require phpunit/phpunit:4.*
+RUN phpunit --version
+
+
+# Drush
+
+RUN composer global require drush/drush:~7.0.0@alpha
+RUN drush --version
 
 
 # HHVM
 
 RUN wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | sudo apt-key add - && \
-    echo 'deb http://dl.hhvm.com/ubuntu trusty main' \
-      | tee /etc/apt/sources.list.d/hhvm.list && \
-    apt-get update && \
-    apt-get install --no-install-recommends -y hhvm libmemcached-dev libgmp-dev
+  echo 'deb http://dl.hhvm.com/ubuntu trusty main' \
+    | tee /etc/apt/sources.list.d/hhvm.list && \
+  apt-get update && \
+  apt-get install --no-install-recommends -y hhvm libmemcached-dev libgmp-dev
 RUN hhvm --version
 
 
