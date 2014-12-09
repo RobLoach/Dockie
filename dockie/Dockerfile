@@ -63,7 +63,7 @@ RUN php --version
 # Composer
 
 RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer \
-  --install-dir=/usr/bin --version=1.0.0-alpha8
+  --install-dir=/usr/bin --version=1.0.0-alpha9
 ENV COMPOSER_HOME /root/.composer
 ENV PATH $COMPOSER_HOME/vendor/bin:$PATH
 RUN composer --version
