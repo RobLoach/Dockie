@@ -18,7 +18,7 @@ Modern development environment for [Docker](http://docker.io).
   * [Composer](http://getcomposer.org) 1.0.0-alpha9
   * [Drush](http://github.com/drush-ops/drush)
   * [PHPUnit](http://phpunit.de)
-  * [HHVM](http://hhvm.com) 3.3.1
+  * [HHVM](http://hhvm.com) 3.4.0
 * [Python](http://python.org) 2.7.6 and 3.4.0
   * [Pylint](http://pylint.org)
 * [Node](http://nodejs.org) 0.10.33
@@ -30,7 +30,7 @@ Modern development environment for [Docker](http://docker.io).
   * [gulp.js](http://gulpjs.com)
   * [component](http://component.io)
   * [Yeoman](http://yeoman.io)
-* [Ruby](http://ruby-lang.org) 2.1.4
+* [Ruby](http://ruby-lang.org) 2.1.5
   * [Gem](http://rubygems.org) 2.2.2
   * [Bundler](http://bundler.io)
   * [Compass](http://compass-style.org)

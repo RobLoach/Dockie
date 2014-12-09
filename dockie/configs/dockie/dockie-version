@@ -1,15 +1,20 @@
 #!/bin/bash
-go version
+echo "Supervisor version:" && supervisord --version
+git --version
+zsh --version
 php --version
+composer --version
+phpunit --version
+drush --version
 hhvm --version
+echo "Node version:" && node --version
 python --version
 python3 --version
-echo "Node version:" && node --version
-ruby --version
+ruby2.1 --version
 echo "Gem version:" && gem --version
 bundle --version
 rake --version
 sass --version
-compass --version
+go version
 rustc --version
 cargo --version
