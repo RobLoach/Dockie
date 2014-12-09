@@ -13,6 +13,6 @@ ADD configs/drupal-make/supervisor.conf /etc/supervisor/conf.d/drupal-make.conf
 
 # Start
 
-VOLUME ["/profile"]
+VOLUME /profile
 EXPOSE 22 80 3306
 CMD ["supervisord", "-n"]

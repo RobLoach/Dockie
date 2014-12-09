@@ -150,5 +150,6 @@ RUN apt-get autoremove
 
 # Start
 
+VOLUME /app
 EXPOSE 22
 CMD ["supervisord"]

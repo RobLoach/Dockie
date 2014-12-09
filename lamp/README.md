@@ -41,9 +41,5 @@ docker run -p 8000:80 -p 2200:22 -p 3306:3306 -v $(pwd):/var/www/html:rw dockie/
 
 ## Services
 
-Service     | Port | Usage
-------------|------|-------
-SSH         | 22   | Connect with `ssh root@localhost -p 422` with the password `root`
-Apache      | 80   | Visit `http://localhost:880` in your browser
-phpMyAdmin  | 80   | Visit `http://localhost:880/phpmyadmin` in your browser
-MySQL       | 3306 | Connect on `localhost:3306`, user `root`, password `root`
+### MySQL
+Connect on `localhost:3306`, user `root`, password `root`.

@@ -53,5 +53,5 @@ RUN /phpmyadmin-setup.sh
 
 # Start
 
-VOLUME ["/var/www/html"]
+VOLUME /var/www/html
 EXPOSE 22 80 3306

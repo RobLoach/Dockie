@@ -16,7 +16,7 @@ chmod 777 sites/default/settings.php
 
 # Install the site with Drush
 # @todo Use MySQL instead of SQLite.
-/root/.composer/vendor/bin/drush site-install ${profile} --yes \
+/root/.composer/vendor/bin/drush site-install ${PROFILE} --yes \
   --db-url=sqlite://sites/default/files/.ht.sqlite \
   --account-name="admin" \
   --account-pass="admin"

@@ -66,13 +66,18 @@ docker run -p 2200:22 dockie/dockie
 
 ## Services
 
-Service     | Port | Usage
-------------|------|-------
-SSH         | 22   | Connect with `ssh root@localhost -p 422` with the password `root`
+### SSH
+
+Connect with `ssh root@localhost -p 2200` with the password `root`.
 
 
 ## Environment Variables
 
-Variable            | Default | Description
-:-------------------|---------|:--------
-`SSH_ROOT_PASSWORD` | `root`  | The password to use for the `root` SSH user.
+### `SSH_ROOT_PASSWORD`
+The password to use for the `root` SSH user. Default: `root`
+
+
+## Volumes
+
+### `/app`
+Intended location for the running application.

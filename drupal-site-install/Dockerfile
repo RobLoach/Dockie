@@ -6,7 +6,7 @@ MAINTAINER Rob Loach <robloach@gmail.com>
 
 # Environment Variables
 
-ENV profile standard
+ENV PROFILE standard
 
 
 # Drupal Site Install

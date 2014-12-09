@@ -52,22 +52,6 @@ more than welcome.
 
 ## Environmental Variables
 
-Service     | Default | Description
-------------|---------|------
-profile     | default | The install profile to use.
+### `PROFILE`
 
-
-## Services
-
-Service     | Port | Usage
-------------|------|------
-SSH         | 22   | Connect with `ssh root@localhost -p 422` with the password `root`
-Apache      | 80   | Visit `http://localhost:880` in your browser
-PHPMyAdmin  | 80   | Visit `http://localhost:880/phpmyadmin` in your browser
-
-
-## Volumes
-
-Volume          | Description
-----------------|-------------
-`/var/www/html` | The location of the web root.
+The install profile to use when installing Drupal. Default: `standard`
