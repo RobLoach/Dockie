@@ -18,7 +18,7 @@ Modern development environment for [Docker](http://docker.io).
   * [Composer](http://getcomposer.org) 1.0.0-alpha9
   * [Drush](http://github.com/drush-ops/drush)
   * [PHPUnit](http://phpunit.de)
-  * [HHVM](http://hhvm.com) 3.4.0
+  * [HHVM](http://hhvm.com) 3.4.1
 * [Python](http://python.org) 2.7.6 and 3.4.0
   * [Pylint](http://pylint.org)
 * [Node](http://nodejs.org) 0.10.33

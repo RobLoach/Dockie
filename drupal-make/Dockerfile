@@ -7,8 +7,8 @@ MAINTAINER Rob Loach <robloach@gmail.com>
 # Drupal Make
 
 ADD configs/drupal-make/drupal-make-setup.sh /drupal-make-setup.sh
-RUN chmod +x /drupal-make-setup.sh
 ADD configs/drupal-make/supervisor.conf /etc/supervisor/conf.d/drupal-make.conf
+RUN chmod +x /drupal-make-setup.sh
 
 
 # Start
