@@ -60,7 +60,7 @@ Visit `http://localhost:880` in your browser. Port: `80`.
 
 ### PHPMyAdmin
 
-Visit `http://localhost:880/phpmyadmin` in your browser.
+Visit `http://localhost:8000/phpmyadmin` in your browser.
 
 
 ## Volumes
