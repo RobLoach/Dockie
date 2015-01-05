@@ -1,20 +1,28 @@
 #!/bin/bash
-echo "Supervisor version:" && supervisord --version
+echo "Supervisor " && supervisord --version
 git --version
 zsh --version
+
 php --version
 composer --version
 phpunit --version
 drush --version
 hhvm --version
-echo "Node version:" && node --version
+
+echo "Node " && node --version
+echo "npm " && npm --version
+
 python --version
 python3 --version
+
 ruby2.1 --version
 echo "Gem version:" && gem --version
 bundle --version
 rake --version
 sass --version
+compass --version
+
 go version
+
 rustc --version
 cargo --version

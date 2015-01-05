@@ -6,6 +6,7 @@ Modern development environment for [Docker](http://docker.io).
 ## Features
 
 * Base
+  * [Ubuntu](http://www.ubuntu.com/) 14.10
   * [git](http://www.git-scm.com)
   * [Mercurial](http://mercurial.selenic.com)
   * [Subversion](https://subversion.apache.org)
@@ -14,15 +15,15 @@ Modern development environment for [Docker](http://docker.io).
   * [Zsh](http://zsh.org)
   * [oh-my-zsh](http://ohmyz.sh)
 * [Go](http://golang.org) 1.2.1
-* [PHP](http://php.net) 5.5.9
+* [PHP](http://php.net) 5.5.12
   * [Composer](http://getcomposer.org) 1.0.0-alpha9
   * [Drush](http://github.com/drush-ops/drush)
   * [PHPUnit](http://phpunit.de)
-  * [HHVM](http://hhvm.com) 3.4.1
-* [Python](http://python.org) 2.7.6 and 3.4.0
+  * [HHVM](http://hhvm.com) 3.4.2
+* [Python](http://python.org) 2.7.8 and 3.4.0
   * [Pylint](http://pylint.org)
-* [Node](http://nodejs.org) 0.10.33
-  * [npm](http://npmjs.org)
+* [Node](http://nodejs.org) 0.10.35
+  * [npm](http://npmjs.org) 1.4.28
   * [Bower](http://bower.io)
   * [CoffeeScript](http://coffeescript.org)
   * [ESLint](http://eslint.org)
@@ -30,14 +31,14 @@ Modern development environment for [Docker](http://docker.io).
   * [gulp.js](http://gulpjs.com)
   * [component](http://component.io)
   * [Yeoman](http://yeoman.io)
-* [Ruby](http://ruby-lang.org) 2.1.5
+* [Ruby](http://ruby-lang.org) 2.1.2
   * [Gem](http://rubygems.org) 2.2.2
-  * [Bundler](http://bundler.io)
-  * [Compass](http://compass-style.org)
+  * [Bundler](http://bundler.io) 1.7.11
+  * [Compass](http://compass-style.org) 1.0.1
   * [Rake](https://github.com/jimweirich/rake)
-  * [SASS](http://sass-lang.com)
+  * [SASS](http://sass-lang.com) 3.4.9
 * [Rust](http://rust-lang.org) 0.13.0-nightly
-  * [Cargo](http://crates.io)
+  * [Cargo](http://crates.io) 0.0.1
 
 
 ## Usage

@@ -1,6 +1,6 @@
 # Dockie Development Environment
 
-FROM ubuntu:trusty
+FROM ubuntu:14.10
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 
@@ -84,7 +84,7 @@ RUN composer global require drush/drush:~7.0.0@alpha && \
 # HHVM
 
 RUN wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | sudo apt-key add - && \
-  echo 'deb http://dl.hhvm.com/ubuntu trusty main' \
+  echo 'deb http://dl.hhvm.com/ubuntu utopic main' \
     | tee /etc/apt/sources.list.d/hhvm.list && \
   apt-get update && \
   apt-get install --no-install-recommends -y hhvm libmemcached-dev libgmp-dev && \
@@ -109,14 +109,10 @@ RUN apt-get install -y python python3 pylint && \
 
 # Ruby
 
-RUN apt-get install software-properties-common -y && \
-  apt-add-repository ppa:brightbox/ruby-ng && \
-  apt-get update && \
-  apt-get install ruby ruby-switch -y && \
-  apt-get install ruby2.1 ruby2.1-dev -y && \
-  ruby-switch --set ruby2.1 && \
-  ruby2.1 --version && echo "Gem version:" && gem --version
-RUN gem install bundler rake sass && \
+RUN apt-get install -y ruby ruby-dev ri && \
+  ruby --version && \
+  echo "Gem version:" && gem --version
+RUN gem install rake bundler sass && \
   bundle --version && rake --version && sass --version && \
   gem install compass && \
   compass --version
