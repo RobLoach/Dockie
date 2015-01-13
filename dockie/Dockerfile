@@ -126,20 +126,23 @@ RUN apt-get install -y golang && \
 
 # Rust
 
-RUN curl -s https://static.rust-lang.org/rustup.sh | sudo sh
+RUN mkdir -p /tmp/rust && cd /tmp/rust && \
+  wget https://static.rust-lang.org/dist/rust-1.0.0-alpha-x86_64-unknown-linux-gnu.tar.gz
+RUN cd /tmp/rust && tar -zxvf * && cd r* && \
+  ./install.sh
 RUN rustc --version && cargo --version
 
 
 # Version Check
 
 COPY configs/dockie/dockie-version /dockie-version
-RUN chmod +x /dockie-version && \
-  /dockie-version
+RUN chmod +x /dockie-version
 
 
 # Clean up
 
 RUN apt-get clean && apt-get autoremove
+RUN /dockie-version
 
 
 # Start
