@@ -37,8 +37,8 @@ Modern development environment for [Docker](http://docker.io).
   * [Compass](http://compass-style.org) 1.0.1
   * [Rake](https://github.com/jimweirich/rake)
   * [SASS](http://sass-lang.com) 3.4.9
-* [Rust](http://rust-lang.org) 0.13.0-nightly
-  * [Cargo](http://crates.io) 0.0.1
+* [Rust](http://rust-lang.org) 1.0.0-alpha
+  * [Cargo](http://crates.io) 0.0.1-pre-nightly
 
 
 ## Usage
