@@ -129,7 +129,7 @@ RUN apt-get install -y golang && \
 RUN mkdir -p /tmp/rust && cd /tmp/rust && \
   wget https://static.rust-lang.org/dist/rust-1.0.0-alpha-x86_64-unknown-linux-gnu.tar.gz
 RUN cd /tmp/rust && tar -zxvf * && cd r* && \
-  ./install.sh
+  ./install.sh && rm -rf /tmp/rust
 RUN rustc --version && cargo --version
 
 
