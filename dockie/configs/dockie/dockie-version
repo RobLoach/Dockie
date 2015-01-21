@@ -26,3 +26,5 @@ go version
 
 rustc --version
 cargo --version
+
+iojs --version

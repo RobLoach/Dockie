@@ -91,6 +91,13 @@ RUN wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | sudo apt-key add - && \
   hhvm --version
 
 
+# Python
+
+RUN apt-get install -y python python3 pylint && \
+python --version && \
+python3 --version
+
+
 # Node.js
 
 RUN apt-get install -y build-essential && \
@@ -100,11 +107,18 @@ RUN apt-get install -y nodejs && \
   npm install -g coffee-script bower grunt-cli gulp component yo eslint
 
 
-# Python
+# io.js
 
-RUN apt-get install -y python python3 pylint && \
-  python --version && \
-  python3 --version
+ENV IOJS_VERSION 1.0.3
+RUN apt-get install -y ca-certificates curl pkg-config python
+RUN gpg --keyserver pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DD5AC78C273792F7D83545D && \
+  curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz" && \
+  curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/SHASUMS256.txt.asc" && \
+  gpg --verify SHASUMS256.txt.asc && \
+  grep " iojs-v$IOJS_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c - && \
+  tar -xzf "iojs-v$IOJS_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 && \
+  rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
+RUN iojs --version
 
 
 # Ruby

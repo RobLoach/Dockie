@@ -15,6 +15,7 @@ Modern development environment for [Docker](http://docker.io).
   * [Zsh](http://zsh.org)
   * [oh-my-zsh](http://ohmyz.sh)
 * [Go](http://golang.org) 1.2.1
+* [io.js](http://iojs.org) 1.0.3
 * [PHP](http://php.net) 5.5.12
   * [Composer](http://getcomposer.org) 1.0.0-alpha9
   * [Drush](http://github.com/drush-ops/drush)
