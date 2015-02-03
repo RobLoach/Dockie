@@ -147,6 +147,11 @@ RUN cd /tmp/rust && tar -zxvf * && cd r* && \
 RUN rustc --version && cargo --version
 
 
+# Utility Packages
+
+RUN apt-get install -y mysql-client
+
+
 # Version Check
 
 COPY configs/dockie/dockie-version /dockie-version
