@@ -149,7 +149,7 @@ RUN rustc --version && cargo --version
 
 # Utility Packages
 
-RUN apt-get install -y mysql-client
+RUN apt-get install -y mysql-client unzip
 
 
 # Version Check
