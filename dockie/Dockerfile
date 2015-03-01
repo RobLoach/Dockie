@@ -93,7 +93,7 @@ RUN wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | sudo apt-key add - && \
 
 # Python
 
-RUN apt-get install -y python python3 pylint && \
+RUN apt-get install -y python python3 python-pil pylint && \
 python --version && \
 python3 --version
 
