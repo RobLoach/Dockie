@@ -109,7 +109,7 @@ RUN apt-get install -y nodejs && \
 
 # io.js
 
-ENV IOJS_VERSION 1.0.3
+ENV IOJS_VERSION 1.4.2
 RUN apt-get install -y ca-certificates curl pkg-config python
 RUN gpg --keyserver pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DD5AC78C273792F7D83545D && \
   curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz" && \
@@ -141,7 +141,7 @@ RUN apt-get install -y golang && \
 # Rust
 
 RUN mkdir -p /tmp/rust && cd /tmp/rust && \
-  wget https://static.rust-lang.org/dist/rust-1.0.0-alpha-x86_64-unknown-linux-gnu.tar.gz
+  wget https://static.rust-lang.org/dist/rust-1.0.0-alpha.2-x86_64-unknown-linux-gnu.tar.gz
 RUN cd /tmp/rust && tar -zxvf * && cd r* && \
   ./install.sh && rm -rf /tmp/rust
 RUN rustc --version && cargo --version

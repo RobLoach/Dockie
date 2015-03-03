@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Supervisor " && supervisord --version
+echo -n "Supervisor " && supervisord --version
 git --version
 zsh --version
 
@@ -9,14 +9,15 @@ phpunit --version
 drush --version
 hhvm --version
 
-echo "Node " && node --version
-echo "npm " && npm --version
+echo -n "Node " && node --version
+echo -n "npm " && npm --version
+echo -n "iojs " && iojs --version
 
 python --version
 python3 --version
 
 ruby2.1 --version
-echo "Gem version:" && gem --version
+echo -n "Gem version:" && gem --version
 bundle --version
 rake --version
 sass --version
@@ -26,5 +27,3 @@ go version
 
 rustc --version
 cargo --version
-
-iojs --version

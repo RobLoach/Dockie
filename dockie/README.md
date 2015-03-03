@@ -20,8 +20,8 @@ Modern development environment for [Docker](http://docker.io).
   * [Composer](http://getcomposer.org) 1.0.0-alpha9
   * [Drush](http://github.com/drush-ops/drush)
   * [PHPUnit](http://phpunit.de)
-  * [HHVM](http://hhvm.com) 3.4.2
-* [Python](http://python.org) 2.7.8 and 3.4.0
+  * [HHVM](http://hhvm.com) 3.5.1
+* [Python](http://python.org) 2.7.8 and 3.4.2
   * [Pylint](http://pylint.org)
 * [Node](http://nodejs.org) 0.10.35
   * [npm](http://npmjs.org) 1.4.28
@@ -34,11 +34,11 @@ Modern development environment for [Docker](http://docker.io).
   * [Yeoman](http://yeoman.io)
 * [Ruby](http://ruby-lang.org) 2.1.2
   * [Gem](http://rubygems.org) 2.2.2
-  * [Bundler](http://bundler.io) 1.7.11
+  * [Bundler](http://bundler.io) 1.8.3
   * [Compass](http://compass-style.org) 1.0.1
   * [Rake](https://github.com/jimweirich/rake)
-  * [SASS](http://sass-lang.com) 3.4.9
-* [Rust](http://rust-lang.org) 1.0.0-alpha
+  * [SASS](http://sass-lang.com) 3.4.13
+* [Rust](http://rust-lang.org) 1.0.0-alpha.2
   * [Cargo](http://crates.io) 0.0.1-pre-nightly
 
 
