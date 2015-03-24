@@ -5,9 +5,8 @@ MAINTAINER Rob Loach <robloach@gmail.com>
 
 
 # Apache
-
 ADD configs/apache2/apache2-service.sh /apache2-service.sh
-RUN apt-get install -y apache2 && \
+RUN apt-get update && apt-get install -y apache2 && \
   chmod +x /*.sh && \
   a2enmod rewrite
 ADD configs/apache2/apache_default /etc/apache2/sites-available/000-default.conf

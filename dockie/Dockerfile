@@ -11,6 +11,15 @@ RUN apt-get update && \
   apt-get upgrade -y
 
 
+# Utility Packages
+
+RUN sudo apt-get install -y \
+  libmysqlclient-dev \
+  libssl-dev \
+  unzip \
+  build-essential
+
+
 # Supervisor
 
 RUN apt-get install -y supervisor && \
@@ -21,7 +30,10 @@ ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 
 # Version Control
 
-RUN apt-get install -y git mercurial subversion && \
+RUN apt-get install -y \
+  git \
+  mercurial \
+  subversion && \
   git --version && \
   hg --version && \
   svn --version
@@ -54,7 +66,7 @@ ADD configs/oh-my-zsh/zshrc /root/.zshrc
 
 RUN apt-get install -y php-pear php5-cgi php5-json php5-cli php5-curl curl \
   php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql php5-gd php5-sqlite \
-  sqlite && \
+  sqlite mysql-client && \
   php5enmod mcrypt pdo pdo_sqlite sqlite3 && \
   php --version
 ADD configs/php/php-cli.ini /etc/php5/cli/conf.d/dockie-dockie.ini
@@ -87,38 +99,34 @@ RUN wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | sudo apt-key add - && \
   echo 'deb http://dl.hhvm.com/ubuntu utopic main' \
     | tee /etc/apt/sources.list.d/hhvm.list && \
   apt-get update && \
-  apt-get install --no-install-recommends -y hhvm libmemcached-dev libgmp-dev && \
+  apt-get install --no-install-recommends -y \
+    hhvm \
+    libmemcached-dev \
+    libgmp-dev && \
   hhvm --version
 
 
 # Python
 
 RUN apt-get install -y python python3 python-pil pylint && \
-python --version && \
-python3 --version
+  python --version && \
+  python3 --version
 
 
-# Node.js
+# Node.js and io.js
 
-RUN apt-get install -y build-essential && \
-  curl -sL https://deb.nodesource.com/setup | sudo bash -
-RUN apt-get install -y nodejs && \
-  nodejs --version && \
-  npm install -g coffee-script bower grunt-cli gulp component yo eslint
-
-
-# io.js
-
-ENV IOJS_VERSION 1.4.2
-RUN apt-get install -y ca-certificates curl pkg-config python
-RUN gpg --keyserver pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DD5AC78C273792F7D83545D && \
-  curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz" && \
-  curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/SHASUMS256.txt.asc" && \
-  gpg --verify SHASUMS256.txt.asc && \
-  grep " iojs-v$IOJS_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c - && \
-  tar -xzf "iojs-v$IOJS_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 && \
-  rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
-RUN iojs --version
+RUN git clone https://github.com/creationix/nvm.git ~/.nvm
+RUN . ~/.nvm/nvm.sh && \
+  nvm install iojs-1.6.1 && \
+  ln -s ~/.nvm/versions/iojs/v1.6.1/bin/iojs /usr/bin/iojs && \
+  nvm install 0.12.0 && \
+  nvm use 0.12.0 && \
+  nvm alias default 0.12.0 && \
+  ln -s ~/.nvm/versions/node/v0.12.0/bin/node /usr/bin/node && \
+  ln -s ~/.nvm/versions/node/v0.12.0/bin/npm /usr/bin/npm
+RUN echo -n "node " && node --version && \
+  echo -n "npm " && npm --version && \
+  echo -n "iojs " && iojs ---version
 
 
 # Ruby
@@ -147,11 +155,6 @@ RUN cd /tmp/rust && tar -zxvf * && cd r* && \
 RUN rustc --version && cargo --version
 
 
-# Utility Packages
-
-RUN apt-get install -y mysql-client unzip
-
-
 # Version Check
 
 COPY configs/dockie/dockie-version /dockie-version
@@ -160,7 +163,9 @@ RUN chmod +x /dockie-version
 
 # Clean up
 
-RUN apt-get clean && apt-get autoremove
+RUN apt-get clean; \
+  apt-get autoremove; \
+  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN /dockie-version
 
 
