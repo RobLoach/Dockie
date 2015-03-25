@@ -17,6 +17,7 @@ RUN sudo apt-get install -y \
   libmysqlclient-dev \
   libssl-dev \
   unzip \
+  cmake \
   build-essential
 
 
