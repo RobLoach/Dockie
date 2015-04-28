@@ -7,11 +7,9 @@ php --version
 composer --version
 phpunit --version
 drush --version
-hhvm --version
 
 echo -n "Node " && node --version
 echo -n "npm " && npm --version
-echo -n "iojs " && iojs --version
 
 python --version
 python3 --version

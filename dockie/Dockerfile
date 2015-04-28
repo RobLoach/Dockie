@@ -1,6 +1,6 @@
 # Dockie Development Environment
 
-FROM ubuntu:14.10
+FROM ubuntu:15.04
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 
@@ -11,34 +11,13 @@ RUN apt-get update && \
   apt-get upgrade -y
 
 
-# Supervisor
+# Base Dependencies
 
-RUN apt-get install -y supervisor && \
-  mkdir -p /var/log/supervisor && \
-  supervisord --version
-ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
-
-
-# Version Control
-
-RUN apt-get install -y git mercurial subversion && \
+RUN apt-get install -y software-properties-common wget \
+  git mercurial subversion && \
   git --version && \
   hg --version && \
   svn --version
-
-
-# OpenSSH
-
-ADD configs/openssh/supervisor.conf /etc/supervisor/conf.d/openssh.conf
-ADD configs/openssh/ssh-setup.sh /ssh-setup.sh
-ENV SSH_ROOT_PASSWORD root
-RUN apt-get install -y openssh-server && \
-  chmod +x /ssh-setup.sh && \
-  mkdir -p /var/run/sshd && \
-  chmod 755 /var/run/sshd && \
-  (echo "root:root" | chpasswd) && \
-  sed -i.bak -e 's/PermitRootLogin without-password/PermitRootLogin yes/g' \
-    /etc/ssh/sshd_config
 
 
 # Zsh
@@ -65,7 +44,7 @@ ADD configs/php/php-cli.ini /etc/php5/cli/conf.d/dockie-dockie.ini
 ENV COMPOSER_HOME /root/.composer
 ENV PATH $COMPOSER_HOME/vendor/bin:$PATH
 RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer \
-  --install-dir=/usr/bin --version=1.0.0-alpha9
+  --install-dir=/usr/bin --version=1.0.0-alpha10
 RUN composer --version
 
 
@@ -81,16 +60,6 @@ RUN composer global require drush/drush:~7.0.0@alpha && \
   drush --version
 
 
-# HHVM
-
-RUN wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | sudo apt-key add - && \
-  echo 'deb http://dl.hhvm.com/ubuntu utopic main' \
-    | tee /etc/apt/sources.list.d/hhvm.list && \
-  apt-get update && \
-  apt-get install --no-install-recommends -y hhvm libmemcached-dev libgmp-dev && \
-  hhvm --version
-
-
 # Python
 
 RUN apt-get install -y python python3 python-pil pylint && \
@@ -101,24 +70,11 @@ python3 --version
 # Node.js
 
 RUN apt-get install -y build-essential && \
-  curl -sL https://deb.nodesource.com/setup | sudo bash -
+  curl -sL https://deb.nodesource.com/setup_0.12 | sh -
 RUN apt-get install -y nodejs && \
   nodejs --version && \
+  npm --version && \
   npm install -g coffee-script bower grunt-cli gulp component yo eslint
-
-
-# io.js
-
-ENV IOJS_VERSION 1.4.2
-RUN apt-get install -y ca-certificates curl pkg-config python
-RUN gpg --keyserver pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DD5AC78C273792F7D83545D && \
-  curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz" && \
-  curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/SHASUMS256.txt.asc" && \
-  gpg --verify SHASUMS256.txt.asc && \
-  grep " iojs-v$IOJS_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c - && \
-  tar -xzf "iojs-v$IOJS_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 && \
-  rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
-RUN iojs --version
 
 
 # Ruby

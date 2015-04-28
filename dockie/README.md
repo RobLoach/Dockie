@@ -6,7 +6,8 @@ Modern development environment for [Docker](http://docker.io).
 ## Features
 
 * Base
-  * [Ubuntu](http://www.ubuntu.com/) 14.10
+  * [Ubuntu](http://www.ubuntu.com/) 15.04
+  * [systemd](http://en.wikipedia.org/wiki/Systemd)
   * [git](http://www.git-scm.com)
   * [Mercurial](http://mercurial.selenic.com)
   * [Subversion](https://subversion.apache.org)
@@ -15,15 +16,14 @@ Modern development environment for [Docker](http://docker.io).
   * [Zsh](http://zsh.org)
   * [oh-my-zsh](http://ohmyz.sh)
 * [Go](http://golang.org) 1.2.1
-* [io.js](http://iojs.org) 1.0.3
 * [PHP](http://php.net) 5.5.12
-  * [Composer](http://getcomposer.org) 1.0.0-alpha9
+  * [Composer](http://getcomposer.org) 1.0.0-alpha10
   * [Drush](http://github.com/drush-ops/drush)
   * [PHPUnit](http://phpunit.de)
   * [HHVM](http://hhvm.com) 3.5.1
 * [Python](http://python.org) 2.7.8 and 3.4.2
   * [Pylint](http://pylint.org)
-* [Node](http://nodejs.org) 0.10.35
+* [Node](http://nodejs.org) 0.12
   * [npm](http://npmjs.org) 1.4.28
   * [Bower](http://bower.io)
   * [CoffeeScript](http://coffeescript.org)
