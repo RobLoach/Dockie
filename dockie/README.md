@@ -15,16 +15,16 @@ Modern development environment for [Docker](http://docker.io).
   * [Supervisor](http://supervisord.org)
   * [Zsh](http://zsh.org)
   * [oh-my-zsh](http://ohmyz.sh)
-* [Go](http://golang.org) 1.2.1
-* [PHP](http://php.net) 5.5.12
+* [Go](http://golang.org) 1.3.3
+* [PHP](http://php.net) 5.6.4
   * [Composer](http://getcomposer.org) 1.0.0-alpha10
-  * [Drush](http://github.com/drush-ops/drush)
+  * [Drush](http://github.com/drush-ops/drush) 7.0.0-rc1
   * [PHPUnit](http://phpunit.de)
   * [HHVM](http://hhvm.com) 3.5.1
 * [Python](http://python.org) 2.7.8 and 3.4.2
   * [Pylint](http://pylint.org)
-* [Node](http://nodejs.org) 0.12
-  * [npm](http://npmjs.org) 1.4.28
+* [Node](http://nodejs.org) 0.12.2
+  * [npm](http://npmjs.org) 2.7.4
   * [Bower](http://bower.io)
   * [CoffeeScript](http://coffeescript.org)
   * [ESLint](http://eslint.org)
@@ -34,8 +34,8 @@ Modern development environment for [Docker](http://docker.io).
   * [Yeoman](http://yeoman.io)
 * [Ruby](http://ruby-lang.org) 2.1.2
   * [Gem](http://rubygems.org) 2.2.2
-  * [Bundler](http://bundler.io) 1.8.3
-  * [Compass](http://compass-style.org) 1.0.1
+  * [Bundler](http://bundler.io) 1.9.4
+  * [Compass](http://compass-style.org) 1.0.3
   * [Rake](https://github.com/jimweirich/rake)
   * [SASS](http://sass-lang.com) 3.4.13
 * [Rust](http://rust-lang.org) 1.0.0-alpha.2

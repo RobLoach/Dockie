@@ -11,6 +11,14 @@ RUN apt-get update && \
   apt-get upgrade -y
 
 
+# Supervisor
+
+RUN apt-get install -y supervisor && \
+  mkdir -p /var/log/supervisor && \
+  supervisord --version
+ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
+
+
 # Base Dependencies
 
 RUN apt-get install -y software-properties-common wget \
