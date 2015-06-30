@@ -64,7 +64,7 @@ RUN composer global require phpunit/phpunit:4.* && \
 
 # Drush
 
-RUN composer global require drush/drush:~7.0.0@alpha && \
+RUN composer global require drush/drush:~7.0.0@beta && \
   drush --version
 
 
@@ -105,10 +105,16 @@ RUN apt-get install -y golang && \
 # Rust
 
 RUN mkdir -p /tmp/rust && cd /tmp/rust && \
-  wget https://static.rust-lang.org/dist/rust-1.0.0-alpha.2-x86_64-unknown-linux-gnu.tar.gz
+  wget https://static.rust-lang.org/dist/rustc-1.1.0-x86_64-unknown-linux-gnu.tar.gz
 RUN cd /tmp/rust && tar -zxvf * && cd r* && \
   ./install.sh && rm -rf /tmp/rust
-RUN rustc --version && cargo --version
+RUN rustc --version
+
+RUN mkdir -p /tmp/cargo && cd /tmp/cargo && \
+  wget https://static.rust-lang.org/cargo-dist/cargo-nightly-x86_64-unknown-linux-gnu.tar.gz
+RUN cd /tmp/cargo && tar -zxvf * && cd c* && \
+  ./install.sh && rm -rf /tmp/cargo
+RUN cargo --version
 
 
 # Utility Packages

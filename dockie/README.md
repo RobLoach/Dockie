@@ -18,13 +18,12 @@ Modern development environment for [Docker](http://docker.io).
 * [Go](http://golang.org) 1.3.3
 * [PHP](http://php.net) 5.6.4
   * [Composer](http://getcomposer.org) 1.0.0-alpha10
-  * [Drush](http://github.com/drush-ops/drush) 7.0.0-rc1
+  * [Drush](http://github.com/drush-ops/drush) 7.0.0
   * [PHPUnit](http://phpunit.de)
-  * [HHVM](http://hhvm.com) 3.5.1
-* [Python](http://python.org) 2.7.8 and 3.4.2
+* [Python](http://python.org) 2.7.9 and 3.4.3
   * [Pylint](http://pylint.org)
-* [Node](http://nodejs.org) 0.12.2
-  * [npm](http://npmjs.org) 2.7.4
+* [Node](http://nodejs.org) 0.12.5
+  * [npm](http://npmjs.org) 2.11.2
   * [Bower](http://bower.io)
   * [CoffeeScript](http://coffeescript.org)
   * [ESLint](http://eslint.org)
@@ -34,12 +33,12 @@ Modern development environment for [Docker](http://docker.io).
   * [Yeoman](http://yeoman.io)
 * [Ruby](http://ruby-lang.org) 2.1.2
   * [Gem](http://rubygems.org) 2.2.2
-  * [Bundler](http://bundler.io) 1.9.4
+  * [Bundler](http://bundler.io) 1.10.5
   * [Compass](http://compass-style.org) 1.0.3
-  * [Rake](https://github.com/jimweirich/rake)
-  * [SASS](http://sass-lang.com) 3.4.13
-* [Rust](http://rust-lang.org) 1.0.0-alpha.2
-  * [Cargo](http://crates.io) 0.0.1-pre-nightly
+  * [Rake](https://github.com/jimweirich/rake) 10.4.2
+  * [SASS](http://sass-lang.com) 3.4.15
+* [Rust](http://rust-lang.org) 1.1.0
+  * [Cargo](http://crates.io) 0.4.0-nightly (4e5fdcd 2015-06-29)
 
 
 ## Usage
