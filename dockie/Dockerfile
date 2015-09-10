@@ -78,8 +78,8 @@ python3 --version
 # Node.js
 
 RUN apt-get install -y build-essential && \
-  curl -sL https://deb.nodesource.com/setup_0.12 | sh -
-RUN apt-get install -y nodejs && \
+  curl -sL https://deb.nodesource.com/setup_4.x | sh -
+RUN apt-get update --fix-missing && apt-get install -y nodejs && \
   nodejs --version && \
   npm --version && \
   npm install -g coffee-script bower grunt-cli gulp component yo eslint
@@ -105,7 +105,7 @@ RUN apt-get install -y golang && \
 # Rust
 
 RUN mkdir -p /tmp/rust && cd /tmp/rust && \
-  wget https://static.rust-lang.org/dist/rustc-1.1.0-x86_64-unknown-linux-gnu.tar.gz
+  wget https://static.rust-lang.org/dist/rust-1.2.0-x86_64-unknown-linux-gnu.tar.gz
 RUN cd /tmp/rust && tar -zxvf * && cd r* && \
   ./install.sh && rm -rf /tmp/rust
 RUN rustc --version
