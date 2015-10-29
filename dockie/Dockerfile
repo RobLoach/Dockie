@@ -1,6 +1,6 @@
 # Dockie Development Environment
 
-FROM ubuntu:15.04
+FROM ubuntu:15.10
 MAINTAINER Rob Loach <robloach@gmail.com>
 
 
@@ -21,7 +21,7 @@ ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 
 # Base Dependencies
 
-RUN apt-get install -y software-properties-common wget \
+RUN apt-get install -y software-properties-common wget mysql-client unzip \
   git mercurial subversion && \
   git --version && \
   hg --version && \
@@ -58,13 +58,13 @@ RUN composer --version
 
 # PHPUnit
 
-RUN composer global require phpunit/phpunit:4.* && \
+RUN composer global require phpunit/phpunit:5.* && \
   phpunit --version
 
 
 # Drush
 
-RUN composer global require drush/drush:~7.0.0@beta && \
+RUN composer global require drush/drush:~8.0.0@rc && \
   drush --version
 
 
@@ -105,21 +105,11 @@ RUN apt-get install -y golang && \
 # Rust
 
 RUN mkdir -p /tmp/rust && cd /tmp/rust && \
-  wget https://static.rust-lang.org/dist/rust-1.2.0-x86_64-unknown-linux-gnu.tar.gz
+  wget https://static.rust-lang.org/dist/rust-1.3.0-x86_64-unknown-linux-gnu.tar.gz
 RUN cd /tmp/rust && tar -zxvf * && cd r* && \
   ./install.sh && rm -rf /tmp/rust
 RUN rustc --version
-
-RUN mkdir -p /tmp/cargo && cd /tmp/cargo && \
-  wget https://static.rust-lang.org/cargo-dist/cargo-nightly-x86_64-unknown-linux-gnu.tar.gz
-RUN cd /tmp/cargo && tar -zxvf * && cd c* && \
-  ./install.sh && rm -rf /tmp/cargo
 RUN cargo --version
-
-
-# Utility Packages
-
-RUN apt-get install -y mysql-client unzip
 
 
 # Version Check

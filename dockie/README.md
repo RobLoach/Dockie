@@ -16,14 +16,14 @@ Modern development environment for [Docker](http://docker.io).
   * [Zsh](http://zsh.org)
   * [oh-my-zsh](http://ohmyz.sh)
 * [Go](http://golang.org) 1.3.3
-* [PHP](http://php.net) 5.6.4
+* [PHP](http://php.net) 5.6.11
   * [Composer](http://getcomposer.org) 1.0.0-alpha10
   * [Drush](http://github.com/drush-ops/drush) 7.0.0
   * [PHPUnit](http://phpunit.de)
-* [Python](http://python.org) 2.7.9 and 3.4.3
+* [Python](http://python.org) 2.7.10 and 3.4.3
   * [Pylint](http://pylint.org)
-* [Node](http://nodejs.org) 0.12.5
-  * [npm](http://npmjs.org) 2.11.2
+* [Node](http://nodejs.org) 4.2.1
+  * [npm](http://npmjs.org) 2.14.7
   * [Bower](http://bower.io)
   * [CoffeeScript](http://coffeescript.org)
   * [ESLint](http://eslint.org)
@@ -31,14 +31,14 @@ Modern development environment for [Docker](http://docker.io).
   * [gulp.js](http://gulpjs.com)
   * [component](http://component.io)
   * [Yeoman](http://yeoman.io)
-* [Ruby](http://ruby-lang.org) 2.1.2
+* [Ruby](http://ruby-lang.org) 2.1.5
   * [Gem](http://rubygems.org) 2.2.2
-  * [Bundler](http://bundler.io) 1.10.5
+  * [Bundler](http://bundler.io) 1.10.6
   * [Compass](http://compass-style.org) 1.0.3
   * [Rake](https://github.com/jimweirich/rake) 10.4.2
-  * [SASS](http://sass-lang.com) 3.4.15
-* [Rust](http://rust-lang.org) 1.1.0
-  * [Cargo](http://crates.io) 0.4.0-nightly (4e5fdcd 2015-06-29)
+  * [SASS](http://sass-lang.com) 3.4.19
+* [Rust](http://rust-lang.org) 1.3.0
+  * [Cargo](http://crates.io) 0.4.0-nightly (553b363 2015-08-03)
 
 
 ## Usage
