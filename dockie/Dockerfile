@@ -39,7 +39,7 @@ ADD configs/oh-my-zsh/zshrc /root/.zshrc
 
 # PHP
 
-RUN apt-get install -y php-pear php5-cgi php5-json php5-cli php5-curl curl \
+RUN apt-get install -y php5-apcu php-pear php5-cgi php5-json php5-cli php5-curl curl \
   php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql php5-gd php5-sqlite \
   sqlite && \
   php5enmod mcrypt pdo pdo_sqlite sqlite3 && \
@@ -64,7 +64,7 @@ RUN composer global require phpunit/phpunit:5.* && \
 
 # Drush
 
-RUN composer global require drush/drush:~8.0.0@rc && \
+RUN composer global require drush/drush:8.* && \
   drush --version
 
 
