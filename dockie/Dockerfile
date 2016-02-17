@@ -22,7 +22,7 @@ ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 # Base Dependencies
 
 RUN apt-get install -y software-properties-common wget mysql-client unzip \
-  git mercurial subversion && \
+  git mercurial subversion iputils-ping && \
   git --version && \
   hg --version && \
   svn --version
