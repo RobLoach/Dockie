@@ -21,7 +21,7 @@ ADD configs/supervisor/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 
 # Base Dependencies
 
-RUN apt-get install -y software-properties-common wget mysql-client unzip \
+RUN apt-get install -y software-properties-common wget mysql-client unzip postfix \
   git mercurial subversion iputils-ping && \
   git --version && \
   hg --version && \
@@ -41,7 +41,7 @@ ADD configs/oh-my-zsh/zshrc /root/.zshrc
 
 RUN apt-get install -y php5-apcu php-pear php5-cgi php5-json php5-cli php5-curl curl \
   php5-mcrypt php5-xdebug mcrypt libmcrypt-dev php5-mysql php5-gd php5-sqlite \
-  sqlite && \
+  sqlite imagemagick php5-imagick && \
   php5enmod mcrypt pdo pdo_sqlite sqlite3 && \
   php --version
 ADD configs/php/php-cli.ini /etc/php5/cli/conf.d/dockie-dockie.ini
