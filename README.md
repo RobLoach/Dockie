@@ -1,3 +1,5 @@
+# Deprecated: Use [Docker4Drupal](https://github.com/Wodby/docker4drupal) instead.
+
 # Dockie
 
 Collection of modern development environments for [Docker](http://docker.io).
